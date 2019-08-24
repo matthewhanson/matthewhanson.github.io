@@ -3,6 +3,12 @@ body {
     width: 70%;
     text-align: center;
 }
+ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -39,3 +45,6 @@ ul.posts {
     font-size: 1.5em;
 }
 
+ul.posts li {
+    list-style: none;
+}
