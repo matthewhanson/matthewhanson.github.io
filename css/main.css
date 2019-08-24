@@ -8,6 +8,7 @@ ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    margin: 10px 0;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
