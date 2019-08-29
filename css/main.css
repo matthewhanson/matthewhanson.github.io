@@ -10,6 +10,10 @@ ul, footer ul {
     font-weight: bold;
     margin: 20px 0;
 }
+ul li { 
+    margin: 30px auto 40px; 
+    font-size: 1.5em;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
