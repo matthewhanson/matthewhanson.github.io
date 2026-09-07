@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./_assets/style.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template"><div>How Open Communities are Revolutionizing Science</div>
+<hr />
+<div>
+    <img src="assets/foss4g2019.png" />
+    <hr />
+    <div style="text-align: right; font-size: 80%">
+        Matthew Hanson<br />
+        @GeoSkeptic<br />
+        <img src='assets/avatar.png' height="50" width="50" style="border:none"/><br />
+    </div>
+    <img src='assets/e84-logo.png' style="border:none; height:15%; width:15%; box-shadow:none;" /><br />
+    <div style="font-size: 50%">@element84</div>
+</div>
+
+<aside class="notes"><ul>
+<li>Hello, name, company</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/foss4g2019.png' />
+
+Big EO Data
+
+<aside class="notes"><ul>
+<li>Thanks to BLOC for hosting, accomadating </li>
+<li>Vasile invitation to give keynote because of exp with big EO data</li>
+<li>Tell story of personal journey, which iincludes history of FOSS4G through my eyes</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+"How Open is revolutionizing science"
+<hr />
+"How Open Ideas are revolutionizing science"
+<hr />
+"How Open Software/Data/Standards are revolutionizing science"
+<hr />
+"How Open (.*) is revolutionizing science"
+<hr />
+
+<aside class="notes"><ul>
+<li>I played with a few variations of a title</li>
+<li>Free exchange of ideas </li>
+<li>thought, talked with lots of folks</li>
+<li>except...I eventually realized</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Except...it's about the communities
+<hr />
+software, data, and standards do not create themselves
+
+<aside class="notes"><ul>
+<li>it&#39;s the communities that create these</li>
+<li>great ideas and solutions go nowhere without a community to promote them</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Looking back...
+
+<aside class="notes"><ul>
+<li>Career has largely been about helping make science easier, for scientists</li>
+<li>analytics and algorithm dev<ul>
+<li>always spent more time doing data preparation</li>
+<li>interesting analytics work always seemed harder than it needed it be</li>
+</ul>
+</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+<img src='assets/avatar.png' style='border:none' />
+
+### 1995 - 2010
+
+remote sensing in government
+
+- multispectral and hyperspectral exploitation
+- material mapping and synethetic scene modeling
+- object detection and identification
+- image registration and geolocation
+
+<aside class="notes"><ul>
+<li>background early 90s in photographic science, transition period of film to consumer digital</li>
+<li>remote sensing and image processing</li>
+<li>self taught software development</li>
+<li>algorithm development</li>
+<li>governments owned and operated satellites</li>
+<li>used by governments and academia, not industry, not tech community</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### FOSS4G
+
+2010 and earlier
+
+<img src='assets/osgeo.png' />
+
+<aside class="notes"><ul>
+<li>government consumers, not contributors</li>
+<li>Birth of the FOSS4G movement in that decade</li>
+<li>OSGeo formed 2006</li>
+<li>The first FOSS4Gs</li>
+<li>Inception and rise of several important projects, still in use</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+<img src='assets/avatar.png' style='border:none' />
+
+### 2011
+
+pivot to earth science
+@ Applied Geosolutions
+
+- climate science
+- agriculture
+- forestry
+- soil carbon models
+
+<aside class="notes"><ul>
+<li>very small company<ul>
+<li>not to be confused with AppGeo in Boston, or GeoSolutions in Italy</li>
+</ul>
+</li>
+<li>scientific processing pipelines</li>
+<li>implementing science code as someone who knew about remote sensing and software</li>
+<li>used a lot of geospatial OS</li>
+<li>and so it was</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/foss4g2011.jpg' />
+
+vectors and web mapping
+
+<aside class="notes"><ul>
+<li>remote sensing wasn&#39;t a big thing</li>
+<li>yes, lots of OS software for dealing with rasters</li>
+<li>mostly era of web mapping and vector data</li>
+<li>don&#39;t want to display images<ul>
+<li>can you turn them into vectors?</li>
+<li>with vectors you can do geometric operations</li>
+</ul>
+</li>
+<li>big impact</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+returned to work thinking of OS role in science
+
+<aside class="notes"><ul>
+<li>returned to work with fresh look on things</li>
+<li>saw that most time scientists spent doing non-science</li>
+<li>looked to streamline the process</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Scientists are messy
+
+<img src='assets/scidir.png' />
+
+<aside class="notes"><ul>
+<li>scientists were poor at data management</li>
+<li>typical work directory, with hapharzardly named files</li>
+<li>don&#39;t know what was source, final product</li>
+<li>no one but the scientist really knew what was going on<ul>
+<li>made replication difficult</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Data provenance was a luxury
+
+<hr />
+
+Publishing papers is the goal
+
+<aside class="notes"><ul>
+<li>provenance seen as a luxury, no time for</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+<img src='assets/avatar.png' style='border:none' />
+
+### 2011 - 2015
+
+earth science
+<hr />
+Data: Landsat, Sentinel, MODIS, PALSAR, LiDAR
+<hr />
+started contributing
+
+- GeoNode
+- GIPPY - Geospatial Image Processing for Python
+- GIPS - Geospatial Image Processing System
+
+<aside class="notes"><ul>
+<li>hduring this time worked a lot with open data</li>
+<li>started contributing to GeoNode to manage some of our data</li>
+<li>set about to tackle problems in data management and pre-processing</li>
+<li>Worked toward making it easier to download open data and create Analysis Ready Data<ul>
+<li>surface reflectance, and cloud-masked products</li>
+<li>that could be turned into time series</li>
+</ul>
+</li>
+<li>L8/L7/L5 and S2 not available as SR</li>
+<li>created new OS proects gippy and gips<ul>
+<li>automate and scale up processing large amounts of data on our servers</li>
+</ul>
+</li>
+<li>toward the end of my time at this company...</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/foss4g2014.png' />
+
+satellite imagery
+
+the rise of smallsats
+
+<aside class="notes"><ul>
+<li>just been 3 years, quite a different time</li>
+<li>Planet launches Doves (2013) - which showed a possible future of having daily fairly high res</li>
+<li>starting to see much lower-cost drones</li>
+<li>there was more interest<ul>
+<li>there was now a scientific track at FOSS4G</li>
+<li>more academics were joining the cult</li>
+</ul>
+</li>
+<li>Landsat-8 launched (2013) - big deal</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/landsat-timeline.png' />
+
+<aside class="notes"><ul>
+<li>1993 landsat6 ruptured fuel chamber, caused tumbling, failed to achieve orbit</li>
+<li>landsat5 extended life span (2012), but some regions not covered<ul>
+<li>archiving responsibility of local ground stations</li>
+</ul>
+</li>
+<li>disasters were not over<ul>
+<li>L7 launched 1999, and was great</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/landsat7-slc.jpg' />
+
+<aside class="notes"><ul>
+<li>after a little over 3 years, 2003, SLC failed<ul>
+<li>piece of hardware compensates for forward movement of craft</li>
+</ul>
+</li>
+<li>More pronounced at edges of scene, complete at center</li>
+<li>made very difficult to use</li>
+<li>that&#39;s why L8 was such a big deal, combine with NASA&#39;s Open Data policy</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/opensat-downloads.png' />
+
+<aside class="notes"><ul>
+<li>so now we had data<ul>
+<li>Landsat-8 (2013)</li>
+<li>shortly after we had Sentinel-2A (2015)</li>
+</ul>
+</li>
+<li>use of that data exploded</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+”You are awesome, your software is awesome, [but] your software is useless, …without data.” 
+
+- Schuyler Erle, 2010
+
+<aside class="notes"><ul>
+<li>Talking primarily about OSM at the time, certainly applicable here</li>
+<li>there were a bunch of OS tools for rasters<ul>
+<li>the use of those tools also exploded</li>
+<li>community started looking at what they could do with all this data</li>
+</ul>
+</li>
+<li>for instance, while GDAL was a long established tool<ul>
+<li>python bindings were awkward, so rasterio was created</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/foss4gna2015.png'>
+
+in search of the golden basemap
+
+<aside class="notes"><ul>
+<li>first thing the community was interested<ul>
+<li>use imagery to create vectors (digitization, tracing)</li>
+<li>make basemaps to display their vector data</li>
+<li>timeline and season dependent basemaps</li>
+</ul>
+</li>
+<li>There were challenges due to the large nature of datafiles<ul>
+<li>But, this was also the time that the cloud started taking off</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Consuming Big Data
+
+<img src='assets/cog.png' />
+
+<aside class="notes"><ul>
+<li>FOSS4G community set to work on improving consumption</li>
+<li>web mapping services for viewing, not for science<ul>
+<li>needed the original unscaled image</li>
+<li>so cloud native formats were very relevant for science</li>
+<li>you could access the original data alues for any region, without downloading<ul>
+<li>although, still some years for scientists to start taking advantage</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+<img src='assets/avatar.png' style='border:none' />
+
+### 2016 - 2019
+
+make remote sensing easier
+
+- International development @developmentseed
+- Tools and libraries to make data more accessible
+
+<aside class="notes"><ul>
+<li>Working for development seed, using sat imagery and mapping international dev</li>
+<li>Users were now non-scientists</li>
+<li>wanted insights and info derived from</li>
+<li>analytics and algorithms are cool, but still harder than it needed to be</li>
+<li>wanted to improve the situation, make it easier to use...correctly<ul>
+<li>still a ways to go</li>
+<li>more on &quot;correctly&quot; later</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+sat-utils
+
+https://github.com/sat-utils
+
+- landsat-util
+- sat-api
+  - public API
+  - L8 and S2 data (AWS and GCP)
+
+<aside class="notes"><ul>
+<li>landsat-util was before my time<ul>
+<li>very successful - search and fetch landsat scenes per band</li>
+</ul>
+</li>
+<li>sat-api also existed (it&#39;s what landsat-util used)<ul>
+<li>L8 and S2</li>
+</ul>
+</li>
+<li>I started working on building upon these</li>
+<li>One issue was that L8 and S2 had different metadata in sat-api<ul>
+<li>I wanted to make them consistent but didn&#39;t have time</li>
+</ul>
+</li>
+<li>presentation in Bonn, then following year</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/foss4g2017.png' />
+
+machine-learning
+
+<aside class="notes"><ul>
+<li>moving beyond the basemap to analytics</li>
+<li>talked about ML as it if were new<ul>
+<li>even though scientists been doing this for years</li>
+</ul>
+</li>
+<li>Now we had a huge number of Data scientists</li>
+<li>how to derive info, through ML pipelines - analytics<ul>
+<li>not do traditional science (determine what&#39;s true from what isn&#39;t)</li>
+<li>use this data to solve problems<ul>
+<li>agriculture</li>
+<li>climate change</li>
+<li>international development</li>
+<li>disaster response</li>
+<li>to help inform policy</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+### We have made great progress
+
+accessing data at scale
+
+processing data at scale
+
+<aside class="notes"><ul>
+<li>thanks to community</li>
+<li>thanks to Open Data</li>
+<li>thanks to advances in computing and cloud infrastructure</li>
+<li>But...</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+discoverability at scale is still a problem
+
+<aside class="notes"><ul>
+<li>Too much data, how do we know what to run it on</li>
+<li>How do we do it programmatically?<ul>
+<li>for ML and analytics pipelines</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+”You are awesome, your software is awesome, [but] your software is useless, …without ~data~ metadata” 
+
+<aside class="notes"><ul>
+<li>i think everyone realizes that metadata is important</li>
+<li>there&#39;s always been metadata but</li>
+<li>But...</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### If your metadata cannot be crawled and indexed, your data does not exist
+
+<aside class="notes"><ul>
+<li>At least it cannot be found and used, so might as well not exist</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/stac-logo.png' style='border:none; height:25%; width:25%; box-shadow:none;' />
+
+SpatioTemporal Asset Catalogs
+
+https://stacspec.org/
+
+See "STAC and OS Software" talk from Friday morning
+
+<aside class="notes"><ul>
+<li>First STAC sprint tail end of SoTM US 2017 in Boulder</li>
+<li>solution to sat-utils</li>
+<li>sat-utils is now a collection of STAC related utilities</li>
+<li>more info see talk</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/planet-stac-search.gif' />
+
+<aside class="notes"><ul>
+<li>as an example, pop in an ID and find a scene</li>
+<li>because the catalog of data was crawlable</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Great progress in Open Standards
+
+- discoverability
+- consumption and use
+
+<aside class="notes"><ul>
+<li>now we&#39;ve made good progress (NOT DONE)</li>
+<li>STAC is promising</li>
+<li>New OGC API standards</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Still we have problems 
+<hr />
+There is a poor understanding of remote sensing data which limits the value of insights derived from it
+
+<aside class="notes"><ul>
+<li>good at using ML approaches and analytics</li>
+<li>Deep Learning has proven to be successful in many areas</li>
+<li>So, the tech community saw influx of open data, started using it<ul>
+<li>have done great things at improving showing what can be done with computing</li>
+</ul>
+</li>
+<li>remote sensing is difficult and complicated<ul>
+<li>lots of sources of variation, over time, over scenes, atmosphere is hard</li>
+</ul>
+</li>
+<li>poor understanding of accuracy and uncertainty<ul>
+<li>Not just tech community, these are also hard science problems</li>
+<li>relaying that info from scientists to non-scientists is even harder</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/landsat8-handbook.png' />
+
+<aside class="notes"><ul>
+<li>As example, there&#39;s a handbook<ul>
+<li>details of L8, how to use the data</li>
+</ul>
+</li>
+<li>Most users in tech community likely never cracked it open</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+<img src='assets/landsat8-toa.png' height=90% width=90%/>
+
+<aside class="notes"><ul>
+<li>If they had, they would see that the distributed data is not even Top of Atmosphere</li>
+<li>It is TOA prime<ul>
+<li>solar elevation</li>
+<li>makes scenes not comparable from day to day or region to region</li>
+</ul>
+</li>
+<li>End users fetch data and calculate NDVI<ul>
+<li>arguable to use it as TOA</li>
+</ul>
+</li>
+<li>Not to say no one knows this, companies doing large-scale analysis <ul>
+<li>but maybe not everyone</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+#### Users assume that data is analysis ready
+
+<aside class="notes"><ul>
+<li>L8/S2 still not available in cloud native formats as surface refl</li>
+<li>especially when it went up on AWS<ul>
+<li>it was available to the masses</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+### Analysis Ready Data Community
+
+<img src='assets/ard19.png' />
+
+<aside class="notes"><ul>
+<li>the answer is still standards</li>
+<li>users should not have to process each type of data in different ways</li>
+<li>how can we mix and fuse data from different sensors or sensor modalities</li>
+<li>need to rely on scientific community to determine what is possible and what isn&#39;t</li>
+<li>requires more engagement between scientists and software developers</li>
+<li>This ARD initiative is perhaps a way forward to think about<ul>
+<li>what ARD even is</li>
+<li>how can we communicate corrections, geometric and radiometric uncertainties</li>
+<li>so non-experts (in remote sensing) are using it in a way that is scientifically consistent</li>
+</ul>
+</li>
+<li>However, scientists also have problems</li>
+</ul>
+</aside></script></section></section><section ><section data-markdown><script type="text/template">
+## Scientific Problems
+
+- Scalability
+- Reproducibility
+- Academic IP
+
+- Software quality
+  - "spaghetti" code
+  - data provenance
+
+<aside class="notes"><ul>
+<li>But, scientific community had problems of their own</li>
+<li>yes, there has been adoption of OS, but not large-scale</li>
+<li>Many scientists still doing things the old way<ul>
+<li>Scientists spaghetti code</li>
+<li>poor data management</li>
+<li>unreleased data or software</li>
+</ul>
+</li>
+<li>this has led to a reproducibility problem<ul>
+<li>50% of earth science work cannot be reproduced</li>
+</ul>
+</li>
+<li>The reason why is that<ul>
+<li>scientists do not necessarily know about the cloud and efficent computing</li>
+<li>and of course, change is hard, and this is cultural</li>
+<li>as an example</li>
+</ul>
+</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+"Open Source" vs publicly available software
+
+<aside class="notes"><ul>
+<li>The difference between usable OSS and code that&#39;s thrown up there</li>
+<li>deployment, examples, documentation, software maintenance</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+These ideas are not novel
+
+<aside class="notes"><ul>
+<li>stated many times</li>
+<li>seen a great many related talks</li>
+<li>But, to be bold I will say that</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Stop building platforms in search of a user community
+<hr />
+Build a user community that will help build a platform
+
+<aside class="notes"><ul>
+<li>the platform that will help solve their problems</li>
+<li>that&#39;s why I&#39;m exicted about one such effort called</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+## Pangeo
+
+http://pangeo.io
+
+Pangeo is first and foremost a community promoting open, reproducible, and scalable science
+
+<aside class="notes"><ul>
+<li>This is but one, I&#39;m sure there are others with similar goals</li>
+<li>Let&#39;s talk and collaborate</li>
+<li>Platforms come and go, communities have inertia</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+The Pangeo project serves as a coordination point between scientists, software, and computing infrastructure
+</script></section><section data-markdown><script type="text/template">
+### Pangeo Goals
+
+1. Foster collaboration around the open source scientific python ecosystem for ocean / atmosphere / land / climate science.
+2. Support the development with domain-specific geoscience packages.
+3. Improve scalability of these tools to handle petabyte-scale datasets on HPC and cloud platforms.
+</script></section><section data-markdown><script type="text/template">
+<img src='assets/pangeo-example.gif' />
+
+courtesy of [Rich Signell](https://www.youtube.com/watch?v=2TkZa0s58qs)
+
+<aside class="notes"><ul>
+<li>Jupyter in the cloud</li>
+<li>the data is stored in the cloud in cloud friendly formats</li>
+<li>algorithm is open</li>
+<li>Executable paper</li>
+<li>This was possible because of</li>
+</ul>
+</aside></script></section><section data-markdown><script type="text/template">
+Open Source Software
+
+Open Standards
+
+Open Data
+
+Open Science
+</script></section></section><section  data-markdown><script type="text/template">
+@GeoSkeptic
+
+<hr />
+
+@Element84</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
