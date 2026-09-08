@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Matthew Hanson</title>
+	<title>geoskeptic &mdash; Matthew Hanson</title>
 	<meta name="description" content="Matthew Hanson — remote sensing and open-source geospatial software. STAC, satellite imagery, and search.">
 	<link rel="icon" type="image/png" href="/images/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,13 @@
 <body>
 <main class="sheet">
 
+	<!-- Regions between BEGIN/END markers are rendered by scripts/build.mjs from
+	     data/*.json. Everything else here is hand written. Don't edit inside a marker. -->
+
 	<header class="masthead">
-		<img class="portrait" src="/images/avatar.png" alt="" width="76" height="76">
-		<div>
+		<img class="portrait" src="/images/avatar.png" alt="" width="84" height="84">
+		<div class="lockup">
+			<p class="mark">geoskeptic</p>
 			<h1>Matthew Hanson</h1>
 			<p class="kicker">Remote sensing &middot; Open-source geospatial</p>
 		</div>
@@ -31,57 +35,96 @@
 	the SpatioTemporal Asset Catalog specification, and serve on its Project Steering
 	Committee. Based in Dover, New Hampshire.</p>
 
-	<section>
-		<h2 class="label">Upcoming</h2>
+	<section class="coll coll-talks">
+		<h2 class="label">Speaking next</h2>
+		<!-- BEGIN:upcoming -->
 		<ul class="entries">
 			<li>
 				<span class="entry-title">Into the STACLands</span>
-				<span class="entry-meta">6&ndash;9 Oct &middot; Cloud-Native Geospatial Forum &middot; Snowbird, UT</span>
-				<span class="entry-note">A choose-your-path tour of STAC. The room votes; the talk goes there.</span>
+				<span class="entry-meta">6–9 Oct 2026 &middot; Cloud-Native Geospatial Forum · Snowbird, UT</span>
+				<span class="entry-note">A choose-your-own-adventure tour of STAC.</span>
 			</li>
 			<li>
 				<span class="entry-title">From Catalog to Content</span>
-				<span class="entry-meta">6&ndash;9 Oct &middot; Cloud-Native Geospatial Forum &middot; Snowbird, UT</span>
+				<span class="entry-meta">6–9 Oct 2026 &middot; Cloud-Native Geospatial Forum · Snowbird, UT</span>
 			</li>
 			<li>
 				<span class="entry-title">Into the STACLands</span>
-				<span class="entry-meta">2&ndash;4 Nov &middot; FOSS4G North America &middot; Sacramento</span>
+				<span class="entry-meta">2–4 Nov 2026 &middot; FOSS4G North America · Sacramento</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-na-2026/talk/7Z3JPE/">abstract</a></span>
 			</li>
 			<li>
 				<span class="entry-title">Open Geo Embeddings</span>
-				<span class="entry-meta">2&ndash;4 Nov &middot; FOSS4G North America &middot; Sacramento</span>
+				<span class="entry-meta">2–4 Nov 2026 &middot; FOSS4G North America · Sacramento</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-na-2026/talk/KJT9VS/">abstract</a></span>
 			</li>
 			<li>
 				<span class="entry-title">Visualizing Aggregations in STAC</span>
-				<span class="entry-meta">2&ndash;4 Nov &middot; FOSS4G North America &middot; Sacramento</span>
+				<span class="entry-meta">2–4 Nov 2026 &middot; FOSS4G North America · Sacramento</span>
+				<span class="entry-note">From scenes to coverage.</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-na-2026/talk/YBKEZZ/">abstract</a></span>
 			</li>
 		</ul>
+		<!-- END:upcoming -->
 	</section>
 
-	<section>
+	<section class="coll coll-talks">
 		<h2 class="label">Recently</h2>
+		<!-- BEGIN:recent -->
 		<ul class="entries">
 			<li>
-				<span class="entry-title">State of STAC<span class="flag">Today</span></span>
-				<span class="entry-meta">3 Sep 2026 &middot; FOSS4G 2026 &middot; Hiroshima</span>
+				<span class="entry-title">State of STAC</span>
+				<span class="entry-meta">3 Sep 2026 &middot; FOSS4G 2026 · Hiroshima</span>
+				<span class="entry-note">From specification to infrastructure.</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-2026/talk/DWERNM/">abstract</a></span>
+			</li>
+			<li>
+				<span class="entry-title">Open Geo Embeddings</span>
+				<span class="entry-meta">2 Sep 2026 &middot; FOSS4G 2026 · Hiroshima</span>
+				<span class="entry-note">Models, representations, and systems.</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-2026/talk/MF97D9/">abstract</a></span>
 			</li>
 			<li>
 				<span class="entry-title">Beyond Metadata Search</span>
-				<span class="entry-meta">2 Sep 2026 &middot; FOSS4G 2026 &middot; Hiroshima</span>
+				<span class="entry-meta">2 Sep 2026 &middot; FOSS4G 2026 · Hiroshima</span>
+				<span class="entry-note">STAC, vector embeddings, and GeoAI.</span>
+				<span class="entry-links"><a href="https://talks.osgeo.org/foss4g-2026/talk/KHBUHX/">abstract</a></span>
 			</li>
 			<li>
 				<span class="entry-title">The Link between STAC and Open Science</span>
-				<span class="entry-meta">26 Aug 2026 &middot; JAXA Sprint &middot; Tsukuba</span>
-			</li>
-			<li>
-				<span class="entry-title">STAC Standards &amp; Roles</span>
-				<span class="entry-meta">25 Aug 2026 &middot; JAXA Sprint &middot; Tsukuba</span>
+				<span class="entry-meta">26 Aug 2026 &middot; JAXA Sprint · Tsukuba</span>
 			</li>
 		</ul>
-		<p class="more"><a href="/talks/">Complete record &mdash; 45 talks since 2018 &rarr;</a></p>
+		<!-- END:recent -->
+		<p class="more"><a href="/talks/">Complete record &mdash; <!-- BEGIN:talkcount -->45 talks since 2018<!-- END:talkcount --> &rarr;</a></p>
 	</section>
 
-	<section>
+	<section class="coll coll-writing">
+		<h2 class="label">Writing</h2>
+		<!-- BEGIN:writing -->
+		<ul class="entries">
+			<li>
+				<span class="entry-title"><a href="https://element84.com/software-engineering/if-ai-is-going-to-task-satellites-we-need-standards/">If AI Is Going to Task Satellites, We Need Standards</a></span>
+				<span class="entry-meta">2026-02-26 &middot; Element 84</span>
+			</li>
+			<li>
+				<span class="entry-title"><a href="https://element84.com/geospatial/ai-coding-and-the-future-of-open-source-geospatial-software/">AI Coding and the Future of Open-Source Geospatial Software</a></span>
+				<span class="entry-meta">2026-01-29 &middot; Element 84</span>
+			</li>
+			<li>
+				<span class="entry-title"><a href="https://element84.com/company/the-2025-geospatial-tech-radar-agentic-ai-eo-embeddings-and-cloud-native-maturity/">The 2025 Geospatial Tech Radar</a></span>
+				<span class="entry-meta">2025-10-30 &middot; Element 84</span>
+			</li>
+			<li>
+				<span class="entry-title"><a href="https://element84.com/software-engineering/stac-a-retrospective-part-2-why-stac-was-successful/">STAC: A Retrospective, Part 2 — Why STAC was Successful</a></span>
+				<span class="entry-meta">2025-10-28 &middot; Element 84</span>
+			</li>
+		</ul>
+		<!-- END:writing -->
+		<p class="more"><a href="/talks/#writing">All posts &rarr;</a></p>
+	</section>
+
+	<section class="coll coll-code">
 		<h2 class="label">Open source</h2>
 		<ul class="entries">
 			<li>
@@ -108,7 +151,6 @@
 			<li><a href="mailto:matt.a.hanson@gmail.com">email</a></li>
 			<li><a href="https://github.com/matthewhanson">github</a></li>
 			<li><a href="https://linkedin.com/in/geoskeptic/">linkedin</a></li>
-			<li><a href="https://twitter.com/geoskeptic/">twitter</a></li>
 		</ul>
 		<p class="colophon">Set in Source Serif&nbsp;4, Inter, and IBM Plex Mono.</p>
 	</footer>

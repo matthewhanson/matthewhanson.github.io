@@ -14,7 +14,7 @@
     --paper-2:    #efe7d4;  /* deeper panel / inset */
     --ink:        #1b2233;  /* near-black ink, faintly blue */
     --ink-2:      #3a4152;  /* softened ink — secondary text */
-    --muted:      #8a8272;  /* warm grey — meta, captions */
+    --muted:      #6f685a;  /* warm grey — meta, captions. 4.8:1 on paper (was #8a8272, 3.3:1) */
 
     /* Two accents — letterpress was genuinely two-colour */
     --oxblood:    #8c2f2f;  /* rules, markers, links */
@@ -43,7 +43,7 @@ body {
     background-size: 4px 4px;
     color: var(--ink);
     font-family: var(--sans);
-    font-size: 1rem;
+    font-size: 1.0625rem;
     font-weight: 400;
     line-height: 1.62;
     -webkit-font-smoothing: antialiased;
@@ -64,8 +64,8 @@ body {
 }
 
 .portrait {
-    width: 76px;
-    height: 76px;
+    width: 84px;
+    height: 84px;
     flex: 0 0 auto;
     border-radius: 50%;
     /* a thin gold foil ring, and a hair of separation from the paper */
@@ -84,12 +84,37 @@ body {
 .kicker {
     margin: 0.4rem 0 0;
     font-family: var(--mono);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.11em;
     text-transform: uppercase;
     color: var(--oxblood);
 }
+
+/* the handle as a publication mark, the name as the byline under it.
+   geoskeptic.dev is the address and geoskeptic is the voice; the name is
+   who is speaking. Pairing them resolves that instead of picking one. */
+.mark {
+    margin: 0 0 0.1rem;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.19em;
+    text-transform: lowercase;
+    color: var(--oxblood);
+}
+
+.mark::before {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1px;
+    margin: 0 0.5rem 0.28em 0;
+    background: var(--oxblood);
+    opacity: 0.55;
+}
+
+.lockup { min-width: 0; }
 
 /* ---------- Rules ---------- */
 
@@ -122,9 +147,9 @@ section { margin-top: 2.9rem; }
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--hairline-soft);
     font-family: var(--mono);
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.13em;
+    letter-spacing: 0.11em;
     text-transform: uppercase;
     color: var(--oxblood);
 }
@@ -169,27 +194,105 @@ section { margin-top: 2.9rem; }
     display: block;
     margin-top: 0.12rem;
     font-family: var(--mono);
-    font-size: 0.73rem;
-    letter-spacing: 0.015em;
+    font-size: 0.8125rem;
+    letter-spacing: 0.01em;
     color: var(--muted);
 }
 
 .entry-note {
     display: block;
-    margin-top: 0.2rem;
-    font-size: 0.9rem;
+    margin-top: 0.24rem;
+    font-size: 0.95rem;
     color: var(--ink-2);
 }
 
 /* out-links on an archive entry — abstract, video, slides */
 .entry-links {
     display: block;
-    margin-top: 0.22rem;
+    margin-top: 0.26rem;
     font-family: var(--mono);
-    font-size: 0.7rem;
+    font-size: 0.78rem;
 }
 
 .entry-links a { margin-right: 0.75rem; }
+
+/* ---------- Collection rhythms ----------
+   The "too simple" problem was that talks, writing, and code all rendered as
+   the same list with the same marker and weight, so nothing signalled which
+   was which. Each collection now keeps the two-colour system but takes a
+   different marker and title face, so the eye can tell them apart while
+   scrolling. */
+
+/* Talks — the dated spine. Oxblood diamond, serif title. (the default above) */
+
+/* Writing — outbound. A hollow gold ring: the mark of something that lives
+   somewhere else, and the one other place gold does any work. */
+.coll-writing .entries > li::before {
+    background: transparent;
+    border: 1.5px solid var(--gold);
+    width: 6px;
+    height: 6px;
+    top: 0.52em;
+    transform: none;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.coll-writing .entry-meta { letter-spacing: 0.04em; }
+
+/* Code — repositories read as code. Mono title, upright square marker. */
+.coll-code .entry-title {
+    font-family: var(--mono);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.coll-code .entries > li::before {
+    transform: none;
+    width: 6px;
+    height: 6px;
+    top: 0.5em;
+    opacity: 0.55;
+}
+
+/* Demos — interactive things, so they get room rather than a line. */
+.cards {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.cards > li {
+    margin: 0;
+    padding: 0.85rem 0.95rem;
+    background: var(--paper-2);
+    border-left: 2px solid var(--gold);
+}
+
+.cards > li::before { content: none; }
+
+/* an empty collection should read as deliberate, not broken */
+.empty {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.8125rem;
+    color: var(--muted);
+}
+
+/* the archive's computed tally */
+.totals {
+    margin: 1.1rem 0 0;
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+}
+
+/* the year headings inside the archive sit closer to their list */
+.coll-talks .label + .entries { margin-bottom: 2.2rem; }
+.coll-talks .entries + .label { margin-top: 0; }
+
+#writing { scroll-margin-top: 2rem; }
 
 /* ---------- Sub-page masthead (no portrait) ---------- */
 
@@ -206,28 +309,14 @@ section { margin-top: 2.9rem; }
 .masthead-sub .kicker a:hover { color: var(--oxblood); }
 
 .masthead-sub h1 { font-size: 1.75rem; }
-
-/* the "next up" flag — the one place gold does any work */
-.flag {
-    display: inline-block;
-    margin-left: 0.45rem;
-    padding: 0.1em 0.42em 0.12em;
-    border: 1px solid var(--gold);
-    font-family: var(--mono);
-    font-size: 0.58rem;
-    font-weight: 500;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    vertical-align: 0.16em;
-    color: var(--gold);
-}
+.masthead-sub .kicker { letter-spacing: 0.13em; }
 
 /* ---------- "more" pointer at the foot of a section ---------- */
 
 .more {
     margin: 1.35rem 0 0;
     font-family: var(--mono);
-    font-size: 0.73rem;
+    font-size: 0.8125rem;
     letter-spacing: 0.02em;
 }
 
@@ -251,7 +340,7 @@ footer {
     padding-top: 1.15rem;
     border-top: 1px solid var(--hairline);
     font-family: var(--mono);
-    font-size: 0.73rem;
+    font-size: 0.78rem;
     color: var(--muted);
 }
 
@@ -281,7 +370,9 @@ footer a:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
     body { padding: 2.75rem 1.25rem 2.5rem; }
     .masthead { gap: 0.95rem; }
     .masthead h1 { font-size: 1.6rem; }
-    .portrait { width: 60px; height: 60px; }
+    .mark { font-size: 0.72rem; letter-spacing: 0.15em; }
+    .mark::before { width: 1rem; margin-right: 0.4rem; }
+    .portrait { width: 64px; height: 64px; }
     .lead { font-size: 1.1rem; }
 }
 
@@ -293,13 +384,13 @@ footer a:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
         --paper-2: #232b3e;
         --ink:     #f0e9db;
         --ink-2:   #c3bcae;
-        --muted:   #8d8676;
-        --oxblood: #c86a63;   /* lifted so it holds contrast on ink */
+        --muted:   #9a9281;   /* 5.1:1 on ink (was #8d8676, 4.4:1) */
+        --oxblood: #d4796f;   /* lifted to 5.1:1 on ink (was #c86a63, 4.3:1) */
         --gold:    #cfa46b;
         --hairline: rgba(240, 233, 219, 0.20);
         --hairline-soft: rgba(240, 233, 219, 0.11);
     }
 
     body { background-image: radial-gradient(rgba(240, 233, 219, 0.02) 1px, transparent 1px); }
-    a { border-bottom-color: rgba(200, 106, 99, 0.4); }
+    a { border-bottom-color: rgba(212, 121, 111, 0.42); }
 }

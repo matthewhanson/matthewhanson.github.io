@@ -1,56 +1,107 @@
 # matthewhanson.github.io
 
-Personal site. Static HTML + one stylesheet, no build step — GitHub Pages serves it as-is.
+Personal site, served at **[geoskeptic.dev](https://geoskeptic.dev)**. Static HTML and one
+stylesheet; a small Node script renders the lists from data files. No dependencies, no CI —
+the generated html is committed and GitHub Pages serves it as-is.
 
 ```
-index.html          home — bio, upcoming talks, open source
-talks/index.html    the complete record: 45 delivered talks, panels, writing
-css/main.css        letterpress palette + type, shared by both pages
+index.html            home — bio, speaking, writing, open source
+talks/index.html      the complete record: talks, panels, writing
+css/main.css          letterpress palette + type, shared by both pages
+data/talks.json       ← single source for every talk, panel, and podcast
+data/posts.json       ← the outbound writing
+data/demos.json       ← demo apps (empty for now)
+scripts/build.mjs     renders the data into both pages
+scripts/check-links.mjs   reports which outbound links have rotted
+presentations/        the 2018–2020 reveal-md decks, served at their original urls
 images/
-  avatar.png        the portrait, recoloured to the site palette
+  avatar.png          the portrait, recoloured to the site palette
   avatar-classic.png  the original yellow version, kept
   favicon.png
 ```
 
-## The talks record
+## What this site is
 
-`talks/index.html` is the published form of **`TALK-ARCHIVE.md`** — the primary-sourced index of
-every talk, panel, and post, compiled from OSGeo pretalx, conference programs, `video.osgeo.org`,
-and the old reveal-md slide repo.
+Three collections — **talks**, **writing**, and (eventually) **demo apps** — where this site is the
+index and hosts almost nothing. Every entry links out to wherever the abstract, video, slides, or
+post already lives.
 
-Nothing is hosted here: every entry links out to wherever the abstract, video, or slides already
-live. That is deliberate — the record stays publishable without depending on deck exports, fonts,
-or build pipelines.
+## Editing
 
-`TALK-ARCHIVE.md` currently lives in the presentations repo. It spans three employers and is a
-personal career record, so it belongs on this side; when it moves, it becomes the source of truth
-for this page. Adding a talk by hand is one four-line `<li>` block in the relevant year section.
-
-Preview locally:
+**Content lives in `data/*.json`. Never hand-edit inside a `<!-- BEGIN:… -->` marker** — the build
+overwrites those regions. Everything else in the html (the bio, the prose, the colophon) is hand
+written and never touched.
 
 ```bash
-python3 -m http.server 8747   # → http://localhost:8747
+node scripts/build.mjs           # render data → html
+node scripts/build.mjs --check   # fail if the html is stale (no write)
+python3 -m http.server 8747      # preview → http://localhost:8747
 ```
+
+Nothing date-relative is ever typed by hand: "upcoming" is computed from today against each
+entry's `sort` key, and the talk counts are derived. An earlier hand-typed `Today` flag had
+already gone stale, which is why.
+
+Each entry keeps `when` as a verbatim display string (`"6–9 Oct 2026"`, `"year unconfirmed"`) plus
+an optional ISO `sort` key for ordering — so date ranges and genuine uncertainty survive instead of
+being flattened into a fake precision.
+
+## Link rot
+
+This site's main failure mode is other people's hosting disappearing, silently. So:
+
+```bash
+node scripts/check-links.mjs             # everything
+node scripts/check-links.mjs --only=posts
+node scripts/check-links.mjs --json
+```
+
+It reports and changes nothing. Dead links come with an archive.org snapshot url when one exists;
+you decide whether to repoint or drop. Root-relative urls are checked against the files on disk
+rather than over the network. Worth running a few times a year — two FOSS4G 2021 abstracts had
+already rotted and are now pointed at Wayback.
 
 ## Styling
 
 Vintage two-colour letterpress — ink and oxblood on cream, antique gold as a sparing "foil".
 The palette and type are carried over from the **`thurston`** presentation theme
-(`EarthLegend/matthewhanson-presentations`) so the site and the vendor-neutral decks read as
-one hand:
+(`matthewhanson/presentations`, private) so the site and the vendor-neutral decks read as one hand.
 
 | Token | Value | Role |
 |---|---|---|
 | `--paper` | `#f5efe1` | warm cream press sheet (+ a 4px radial paper tooth) |
 | `--ink` | `#1b2233` | near-black ink, faintly blue |
+| `--muted` | `#6f685a` | meta and captions — 4.8:1 on paper |
 | `--oxblood` | `#8c2f2f` | rules, markers, links |
-| `--gold` | `#b8894b` | the foil — portrait ring and the "today" flag only |
+| `--gold` | `#b8894b` | the foil — portrait ring and the writing markers |
 
 Type is Source Serif 4 (headings, entry titles), Inter (body), IBM Plex Mono (labels, meta,
 colophon), all from Google Fonts. A `prefers-color-scheme: dark` block flips the sheet to ink.
 
+**Contrast is a constraint, not a preference.** `--muted` and the dark-mode `--oxblood` are both set
+to the values they are because the previous ones failed WCAG AA at the sizes they're used
+(3.3:1 and 4.3:1 against a 4.5:1 requirement). If you retune the palette, check the ratios.
+
+**The three collections deliberately differ.** Talks take an oxblood diamond marker and serif
+titles; writing takes a hollow gold ring and names its host; open source takes an upright square
+and a **monospace** title so repos read as code. They used to render identically, which made the
+page hard to scan.
+
+The masthead pairs both identities: `geoskeptic` as the mark, *Matthew Hanson* as the person.
+
 ## Custom domain
 
-Not set yet. To point a domain here, add a `CNAME` file containing the bare hostname and set
-the DNS records at the registrar. A custom domain on this repo also covers project pages on
-the same account — `matthewhanson.github.io/<repo>` becomes `<domain>/<repo>` automatically.
+`geoskeptic.dev`, on Cloudflare DNS with the records **proxied** (orange cloud), so Cloudflare
+terminates TLS with its own Universal SSL certificate.
+
+Because of that, **GitHub's "Enforce HTTPS" is permanently unavailable and should be ignored** —
+GitHub never issues a certificate for a proxied domain. Cloudflare's *Always Use HTTPS* is the
+equivalent setting. Cloudflare's SSL mode must be **Full**: *Flexible* causes a redirect loop and
+*Full (strict)* fails, since GitHub holds no certificate for this hostname.
+
+`.dev` is on the HSTS preload list as a whole TLD, so browsers refuse plain HTTP with no
+click-through. During any certificate change the site is unreachable rather than insecure.
+
+The 2018–2020 decks in `presentations/` are served at the same paths they had as a project page of
+`matthewhanson/presentations`, so those urls survived that repo going private. **Pages must stay
+disabled on that repo** — a project page there would shadow this folder.

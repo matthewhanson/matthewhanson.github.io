@@ -1,0 +1,789 @@
+[
+  {
+    "title": "Into the STACLands",
+    "when": "6–9 Oct 2026",
+    "sort": "2026-10-06",
+    "venue": "Cloud-Native Geospatial Forum",
+    "location": "Snowbird, UT",
+    "kind": "talk",
+    "status": "upcoming",
+    "note": "A choose-your-own-adventure tour of STAC."
+  },
+  {
+    "title": "From Catalog to Content",
+    "when": "6–9 Oct 2026",
+    "sort": "2026-10-06",
+    "venue": "Cloud-Native Geospatial Forum",
+    "location": "Snowbird, UT",
+    "kind": "talk",
+    "status": "upcoming"
+  },
+  {
+    "title": "Into the STACLands",
+    "when": "2–4 Nov 2026",
+    "sort": "2026-11-02",
+    "venue": "FOSS4G North America",
+    "location": "Sacramento",
+    "kind": "talk",
+    "status": "upcoming",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2026/talk/7Z3JPE/"
+      }
+    ]
+  },
+  {
+    "title": "Open Geo Embeddings",
+    "when": "2–4 Nov 2026",
+    "sort": "2026-11-02",
+    "venue": "FOSS4G North America",
+    "location": "Sacramento",
+    "kind": "talk",
+    "status": "upcoming",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2026/talk/KJT9VS/"
+      }
+    ]
+  },
+  {
+    "title": "Visualizing Aggregations in STAC",
+    "when": "2–4 Nov 2026",
+    "sort": "2026-11-02",
+    "venue": "FOSS4G North America",
+    "location": "Sacramento",
+    "kind": "talk",
+    "status": "upcoming",
+    "note": "From scenes to coverage.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2026/talk/YBKEZZ/"
+      }
+    ]
+  },
+  {
+    "title": "State of STAC",
+    "when": "3 Sep",
+    "sort": "2026-09-03",
+    "venue": "FOSS4G 2026",
+    "location": "Hiroshima",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "From specification to infrastructure.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2026/talk/DWERNM/"
+      }
+    ]
+  },
+  {
+    "title": "Open Geo Embeddings",
+    "when": "2 Sep",
+    "sort": "2026-09-02",
+    "venue": "FOSS4G 2026",
+    "location": "Hiroshima",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Models, representations, and systems.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2026/talk/MF97D9/"
+      }
+    ]
+  },
+  {
+    "title": "Beyond Metadata Search",
+    "when": "2 Sep",
+    "sort": "2026-09-02",
+    "venue": "FOSS4G 2026",
+    "location": "Hiroshima",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "STAC, vector embeddings, and GeoAI.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2026/talk/KHBUHX/"
+      }
+    ]
+  },
+  {
+    "title": "The Link between STAC and Open Science",
+    "when": "26 Aug",
+    "sort": "2026-08-26",
+    "venue": "JAXA Sprint",
+    "location": "Tsukuba",
+    "kind": "talk",
+    "status": "delivered"
+  },
+  {
+    "title": "STAC Standards & Roles",
+    "when": "25 Aug",
+    "sort": "2026-08-25",
+    "venue": "JAXA Sprint",
+    "location": "Tsukuba",
+    "kind": "talk",
+    "status": "delivered"
+  },
+  {
+    "title": "Semantic Search and Change Detection",
+    "when": "18–19 May",
+    "sort": "2026-05-18",
+    "venue": "Stratus 2026",
+    "location": "Rochester, NY",
+    "kind": "talk",
+    "status": "delivered"
+  },
+  {
+    "title": "State of STAPI",
+    "when": "17–23 Nov",
+    "sort": "2025-11-17",
+    "venue": "FOSS4G 2025",
+    "location": "Auckland",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "A community tasking standard. Co-presented.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2025/talk/ASNWTC/"
+      }
+    ]
+  },
+  {
+    "title": "STAC 101: What You Really Need to Know",
+    "when": "17–23 Nov",
+    "sort": "2025-11-17",
+    "venue": "FOSS4G 2025",
+    "location": "Auckland",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2025/talk/PJDVGR/"
+      }
+    ]
+  },
+  {
+    "title": "Earth Search: Expanding Open Access to Sentinel-2 and Beyond",
+    "when": "17–23 Nov",
+    "sort": "2025-11-17",
+    "venue": "FOSS4G 2025",
+    "location": "Auckland",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2025/talk/DZRYCJ/"
+      }
+    ]
+  },
+  {
+    "title": "AI Coding and the Future of Open-Source Geospatial Software",
+    "when": "17–23 Nov",
+    "sort": "2025-11-17",
+    "venue": "FOSS4G 2025",
+    "location": "Auckland",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2025/talk/F8BZXS/"
+      }
+    ]
+  },
+  {
+    "title": "State of STAPI",
+    "when": "3–5 Nov",
+    "sort": "2025-11-03",
+    "venue": "FOSS4G North America 2025",
+    "location": "Reston, VA",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Co-presented.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2025/talk/G3MHUZ/"
+      }
+    ]
+  },
+  {
+    "title": "STAC Best Practices",
+    "when": "3–5 Nov",
+    "sort": "2025-11-03",
+    "venue": "FOSS4G North America 2025",
+    "location": "Reston, VA",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2025/talk/BLMK9V/"
+      }
+    ]
+  },
+  {
+    "title": "Introduction to STAC",
+    "when": "30 Apr",
+    "sort": "2025-04-30",
+    "venue": "Cloud-Native Geospatial Conference 2025",
+    "location": "Snowbird, UT",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "agenda",
+        "url": "https://2025-ut.cloudnativegeo.org/agenda"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=1KPvEnH29sU"
+      }
+    ]
+  },
+  {
+    "title": "The State of STAC",
+    "when": "2–8 Dec",
+    "sort": "2024-12-02",
+    "venue": "FOSS4G 2024",
+    "location": "Belém, Brazil",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2024/talk/W898HE/"
+      }
+    ]
+  },
+  {
+    "title": "Community Standards and Satellite Tasking",
+    "when": "2–8 Dec",
+    "sort": "2024-12-02",
+    "venue": "FOSS4G 2024",
+    "location": "Belém, Brazil",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2024/talk/GSAVCT/"
+      }
+    ]
+  },
+  {
+    "title": "GeoAI for all",
+    "when": "2–8 Dec",
+    "sort": "2024-12-02",
+    "venue": "FOSS4G 2024",
+    "location": "Belém, Brazil",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Helping answer the most common questions in geo.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2024/talk/3EWQR9/"
+      }
+    ]
+  },
+  {
+    "title": "STAC for Public EO Data",
+    "when": "9–11 Sep",
+    "sort": "2024-09-09",
+    "venue": "FOSS4G North America 2024",
+    "location": "St. Louis, MO",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2024/talk/99EUP3/"
+      },
+      {
+        "label": "video",
+        "url": "https://video.osgeo.org/w/wufEWunWtgjDV6Do6zfPR8"
+      }
+    ]
+  },
+  {
+    "title": "The Sensor Tasking API (STAPI) Specification",
+    "when": "9–11 Sep",
+    "sort": "2024-09-09",
+    "venue": "FOSS4G North America 2024",
+    "location": "St. Louis, MO",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-na-2024/talk/BPBBYA/"
+      }
+    ]
+  },
+  {
+    "title": "Next Generation Search & Discovery",
+    "when": "24 Jul",
+    "sort": "2024-07-24",
+    "venue": "ESIP July Meeting 2024",
+    "location": "Asheville, NC",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Multi-speaker session.",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2024julyesipmeeting.sched.com/event/1eVLc/"
+      }
+    ]
+  },
+  {
+    "title": "AI/ML for Search and Discovery",
+    "when": "23 Jul",
+    "sort": "2024-07-23",
+    "venue": "ESIP July Meeting 2024",
+    "location": "Asheville, NC",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Multi-speaker session.",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2024julyesipmeeting.sched.com/event/1eVOi/"
+      }
+    ]
+  },
+  {
+    "title": "State of STAC",
+    "when": "26 Jun–2 Jul",
+    "sort": "2023-06-26",
+    "venue": "FOSS4G 2023",
+    "location": "Prizren, Kosovo",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Co-presented.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2023/talk/FAHXCM/"
+      }
+    ]
+  },
+  {
+    "title": "An overview of Cloud-Native Geospatial",
+    "when": "26 Jun–2 Jul",
+    "sort": "2023-06-26",
+    "venue": "FOSS4G 2023",
+    "location": "Prizren, Kosovo",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2023/talk/XBHYF9/"
+      },
+      {
+        "label": "video",
+        "url": "https://video.osgeo.org/w/rHjWR8ptCjxKdjFwWNL31s"
+      }
+    ]
+  },
+  {
+    "title": "Standardizing Satellite Tasking for Consumers",
+    "when": "26 Jun–2 Jul",
+    "sort": "2023-06-26",
+    "venue": "FOSS4G 2023",
+    "location": "Prizren, Kosovo",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2023/talk/BSMTUZ/"
+      },
+      {
+        "label": "video",
+        "url": "https://video.osgeo.org/w/cN8cSwQX7CvMH4XtAcVeQF"
+      }
+    ]
+  },
+  {
+    "title": "Earth Search: A STAC API of Open Datasets on AWS",
+    "when": "26 Jun–2 Jul",
+    "sort": "2023-06-26",
+    "venue": "FOSS4G 2023",
+    "location": "Prizren, Kosovo",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2023/talk/SQQSXP/"
+      },
+      {
+        "label": "video",
+        "url": "https://video.osgeo.org/w/8REPGMqnXicmDfaGngqTGd"
+      }
+    ]
+  },
+  {
+    "title": "SatSummit 2022",
+    "when": "28–29 Sep",
+    "sort": "2022-09-28",
+    "venue": "Washington, DC",
+    "location": null,
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Session not listed publicly.",
+    "links": [
+      {
+        "label": "speaker page",
+        "url": "https://2022.satsummit.io/speakers/matthew-hanson/"
+      }
+    ]
+  },
+  {
+    "title": "The State of Cloud-Native Geospatial",
+    "when": "22–28 Aug",
+    "sort": "2022-08-22",
+    "venue": "FOSS4G 2022",
+    "location": "Florence, Italy",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2022/talk/FSK8U3/"
+      }
+    ]
+  },
+  {
+    "title": "Analysis Ready (Meta)Data",
+    "when": "22–28 Aug",
+    "sort": "2022-08-22",
+    "venue": "FOSS4G 2022",
+    "location": "Florence, Italy",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2022/talk/YPHAZB/"
+      }
+    ]
+  },
+  {
+    "title": "STAC Best Practices and Tools",
+    "when": "22–28 Aug",
+    "sort": "2022-08-22",
+    "venue": "FOSS4G 2022",
+    "location": "Florence, Italy",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Co-presented.",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://talks.osgeo.org/foss4g-2022/talk/9RRYZM/"
+      }
+    ]
+  },
+  {
+    "title": "Overview: SpatioTemporal Asset Catalogs (STAC)",
+    "when": "May",
+    "sort": "2022-05-00",
+    "venue": "OGC / Cloud-Native Geospatial Outreach",
+    "location": "virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=Ugazf5bWsGE"
+      }
+    ]
+  },
+  {
+    "title": "Getting Started with STAC for Public Datasets",
+    "when": "1 Oct",
+    "sort": "2021-10-01",
+    "venue": "FOSS4G 2021",
+    "location": "Buenos Aires, virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract (archived)",
+        "url": "http://web.archive.org/web/20220814161039/https://callforpapers.2021.foss4g.org/foss4g2021/talk/PVKSFT/index.html"
+      }
+    ]
+  },
+  {
+    "title": "The State of STAC",
+    "when": "30 Sep",
+    "sort": "2021-09-30",
+    "venue": "FOSS4G 2021",
+    "location": "Buenos Aires, virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract (archived)",
+        "url": "http://web.archive.org/web/20220814154223/https://callforpapers.2021.foss4g.org/foss4g2021/talk/DNKY3E/index.html"
+      }
+    ]
+  },
+  {
+    "title": "Advancements in STAC and Remote Sensing Interoperability",
+    "when": "28 Jan",
+    "sort": "2021-01-28",
+    "venue": "ESIP Winter Meeting 2021",
+    "location": "virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Multi-speaker session.",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2021esipwintermeeting.sched.com/event/g49x"
+      }
+    ]
+  },
+  {
+    "title": "STAC and Cloud-Optimized Data",
+    "when": "14 Jul",
+    "sort": "2020-07-14",
+    "venue": "ESIP Summer Meeting 2020",
+    "location": "virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Multi-speaker session.",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2020esipsummermeeting.sched.com/event/cIvF/"
+      }
+    ]
+  },
+  {
+    "title": "A Geospatial Cloud",
+    "when": "Feb",
+    "sort": "2020-02-00",
+    "venue": "Landsat Science Team Winter Meeting 2020",
+    "location": null,
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/1ZcMlg6iZFgsm2MxIjuhjR9o6iw6La4cMggqz24X6M1M/edit"
+      }
+    ]
+  },
+  {
+    "title": "STAC and the Open-Source Ecosystem",
+    "when": "7 Jan",
+    "sort": "2020-01-07",
+    "venue": "ESIP Winter Meeting 2020",
+    "location": "Bethesda, MD",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Opened the Geospatial Interoperability with STAC session.",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2020esipwintermeeting.sched.com/event/VaXQ/"
+      },
+      {
+        "label": "session deck",
+        "url": "/presentations/2020/ESIP-Winter--STAC.html"
+      },
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/1nLrKkPi3c3gCONh_2vg_QfCsJreonwc_4LgW7OYeCHM/edit"
+      }
+    ]
+  },
+  {
+    "title": "STAC (lightning talk)",
+    "when": "5 Nov",
+    "sort": "2019-11-05",
+    "venue": "STAC Happy Hour",
+    "location": "Element 84 HQ",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=1IlanhkdLWk"
+      }
+    ]
+  },
+  {
+    "title": "How Open Communities are Revolutionizing Science",
+    "when": "26 Sep",
+    "sort": "2019-09-26",
+    "venue": "UNH Brown Bag Seminar",
+    "location": "Durham, NH",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Scalability and reproducibility in the geosciences through open standards.",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2019/unh-open.html"
+      }
+    ]
+  },
+  {
+    "title": "How Open Communities are Revolutionizing Science",
+    "when": "26–30 Aug",
+    "sort": "2019-08-26",
+    "venue": "FOSS4G 2019",
+    "location": "Bucharest",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Opening keynote.",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2019/foss4g-open-keynote.html"
+      },
+      {
+        "label": "speaker page",
+        "url": "https://2019.foss4g.org/speakers/matthew-hanson/"
+      }
+    ]
+  },
+  {
+    "title": "STAC and the Open-Source Ecosystem",
+    "when": "26–30 Aug",
+    "sort": "2019-08-26",
+    "venue": "FOSS4G 2019",
+    "location": "Bucharest",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/13wuBZWbjxD9aite2O-Bf2m9CNTakh_OVAueIlyM1Buw/edit"
+      }
+    ]
+  },
+  {
+    "title": "How Open-Source Software Made cubesatdata.com Possible",
+    "when": "26–30 Aug",
+    "sort": "2019-08-26",
+    "venue": "FOSS4G 2019",
+    "location": "Bucharest",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/18Jn-DAkniYFn9dn7i0W6FYz9imohQaSrjpo5Z_wQss8/edit"
+      }
+    ]
+  },
+  {
+    "title": "STAC Software Efforts",
+    "when": "Jun",
+    "sort": "2019-06-00",
+    "venue": "STAC Sprint #4",
+    "location": "Arlington, VA",
+    "kind": "talk",
+    "status": "delivered"
+  },
+  {
+    "title": "SpatioTemporal Asset Catalog (STAC) and sat-utils",
+    "when": "14–18 Apr",
+    "sort": "2019-04-14",
+    "venue": "FOSS4G North America 2019",
+    "location": "San Diego, CA",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2019/foss4gna--stac-and-sat-utils.html"
+      }
+    ]
+  },
+  {
+    "title": "How Cloudy is London Really?",
+    "when": "Mar",
+    "sort": "2019-03-00",
+    "venue": "venue unidentified",
+    "location": null,
+    "kind": "talk",
+    "status": "delivered",
+    "note": "A MODIS cloud-frequency data story."
+  },
+  {
+    "title": "sat-utils",
+    "when": "20 Sep",
+    "sort": "2018-09-20",
+    "venue": "SatSummit 2018",
+    "location": "Washington, DC",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Workshop, Analysis at Scale track.",
+    "links": [
+      {
+        "label": "speaker page",
+        "url": "https://2018.satsummit.io/speakers/matt-hanson/"
+      }
+    ]
+  },
+  {
+    "title": "Finding and Using Public Earth Imagery with sat-utils",
+    "when": "Aug",
+    "sort": "2018-08-00",
+    "venue": "FOSS4G 2018",
+    "location": "Dar es Salaam",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "A talk cut and a workshop cut."
+  },
+  {
+    "title": "Matthew Hanson on STACspec Success and Guerrilla Standards",
+    "when": "Dec 2025",
+    "sort": "2025-12-00",
+    "venue": "Great Data Products",
+    "location": "podcast",
+    "kind": "podcast",
+    "status": "delivered",
+    "note": "Community-driven standards, and why flexibility is the enemy of interoperability.",
+    "links": [
+      {
+        "label": "episode",
+        "url": "https://greatdataproducts.com/episodes/2025/12/hanson-stac/"
+      }
+    ]
+  },
+  {
+    "title": "Open-source panel",
+    "when": "year unconfirmed",
+    "sort": null,
+    "venue": "NORTH51",
+    "location": "Alberta",
+    "kind": "panel",
+    "status": "delivered",
+    "note": "Moderator — on accountability, standards, and diversity in open source.",
+    "links": [
+      {
+        "label": "recap",
+        "url": "https://gno-sys.com/north51-highlights-recap/"
+      }
+    ]
+  }
+]
