@@ -310,8 +310,12 @@
         "url": "https://talks.osgeo.org/foss4g-na-2024/talk/99EUP3/"
       },
       {
-        "label": "video",
+        "label": "video (OSGeo)",
         "url": "https://video.osgeo.org/w/wufEWunWtgjDV6Do6zfPR8"
+      },
+      {
+        "label": "video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=cEs0yEIl41Q"
       }
     ]
   },
@@ -392,8 +396,12 @@
         "url": "https://talks.osgeo.org/foss4g-2023/talk/XBHYF9/"
       },
       {
-        "label": "video",
+        "label": "video (OSGeo)",
         "url": "https://video.osgeo.org/w/rHjWR8ptCjxKdjFwWNL31s"
+      },
+      {
+        "label": "video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=g7iMO1KmyJE"
       }
     ]
   },
@@ -411,8 +419,12 @@
         "url": "https://talks.osgeo.org/foss4g-2023/talk/BSMTUZ/"
       },
       {
-        "label": "video",
+        "label": "video (OSGeo)",
         "url": "https://video.osgeo.org/w/cN8cSwQX7CvMH4XtAcVeQF"
+      },
+      {
+        "label": "video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=qlmV6_AsWjU"
       }
     ]
   },
@@ -430,8 +442,12 @@
         "url": "https://talks.osgeo.org/foss4g-2023/talk/SQQSXP/"
       },
       {
-        "label": "video",
+        "label": "video (OSGeo)",
         "url": "https://video.osgeo.org/w/8REPGMqnXicmDfaGngqTGd"
+      },
+      {
+        "label": "video (YouTube)",
+        "url": "https://www.youtube.com/watch?v=iTpus3GtIqA"
       }
     ]
   },
@@ -463,6 +479,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2022/talk/FSK8U3/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=xtK_gbxZdRk"
       }
     ]
   },
@@ -494,6 +514,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2022/talk/9RRYZM/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=yhgQWtyyWJE"
       }
     ]
   },
