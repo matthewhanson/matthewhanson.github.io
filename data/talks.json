@@ -7,7 +7,7 @@
     "location": "Snowbird, UT",
     "kind": "talk",
     "status": "upcoming",
-    "note": "A choose-your-own-adventure tour of STAC."
+    "subtitle": "A choose-your-own-adventure tour of STAC"
   },
   {
     "title": "From Catalog to Content",
@@ -56,13 +56,13 @@
     "location": "Sacramento",
     "kind": "talk",
     "status": "upcoming",
-    "note": "From scenes to coverage.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-na-2026/talk/YBKEZZ/"
       }
-    ]
+    ],
+    "subtitle": "From scenes to coverage"
   },
   {
     "title": "State of STAC",
@@ -72,13 +72,13 @@
     "location": "Hiroshima",
     "kind": "talk",
     "status": "delivered",
-    "note": "From specification to infrastructure.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2026/talk/DWERNM/"
       }
-    ]
+    ],
+    "subtitle": "From specification to infrastructure"
   },
   {
     "title": "Open Geo Embeddings",
@@ -88,13 +88,13 @@
     "location": "Hiroshima",
     "kind": "talk",
     "status": "delivered",
-    "note": "Models, representations, and systems.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2026/talk/MF97D9/"
       }
-    ]
+    ],
+    "subtitle": "Models, representations, and systems"
   },
   {
     "title": "Beyond Metadata Search",
@@ -104,13 +104,13 @@
     "location": "Hiroshima",
     "kind": "talk",
     "status": "delivered",
-    "note": "STAC, vector embeddings, and GeoAI.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2026/talk/KHBUHX/"
       }
-    ]
+    ],
+    "subtitle": "STAC, vector embeddings, and GeoAI"
   },
   {
     "title": "The Link between STAC and Open Science",
@@ -147,7 +147,6 @@
     "location": "Auckland",
     "kind": "talk",
     "status": "delivered",
-    "note": "A community tasking standard. Co-presented.",
     "links": [
       {
         "label": "abstract",
@@ -157,7 +156,9 @@
         "label": "video",
         "url": "https://www.youtube.com/watch?v=C18FRsOpQPk"
       }
-    ]
+    ],
+    "subtitle": "A community tasking standard",
+    "note": "Co-presented"
   },
   {
     "title": "STAC 101: What You Really Need to Know",
@@ -224,13 +225,13 @@
     "location": "Reston, VA",
     "kind": "talk",
     "status": "delivered",
-    "note": "Co-presented.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-na-2025/talk/G3MHUZ/"
       }
-    ]
+    ],
+    "note": "Co-presented"
   },
   {
     "title": "STAC Best Practices",
@@ -308,7 +309,6 @@
     "location": "Belém, Brazil",
     "kind": "talk",
     "status": "delivered",
-    "note": "Helping answer the most common questions in geo.",
     "links": [
       {
         "label": "abstract",
@@ -318,7 +318,8 @@
         "label": "video",
         "url": "https://www.youtube.com/watch?v=FPaDfWoLdBo"
       }
-    ]
+    ],
+    "subtitle": "Helping answer the most common questions in geo"
   },
   {
     "title": "STAC for Public EO Data",
@@ -366,13 +367,13 @@
     "location": "Asheville, NC",
     "kind": "talk",
     "status": "delivered",
-    "note": "Multi-speaker session.",
     "links": [
       {
         "label": "session",
         "url": "https://2024julyesipmeeting.sched.com/event/1eVLc/"
       }
-    ]
+    ],
+    "note": "Multi-speaker session"
   },
   {
     "title": "AI/ML for Search and Discovery",
@@ -382,13 +383,13 @@
     "location": "Asheville, NC",
     "kind": "talk",
     "status": "delivered",
-    "note": "Multi-speaker session.",
     "links": [
       {
         "label": "session",
         "url": "https://2024julyesipmeeting.sched.com/event/1eVOi/"
       }
-    ]
+    ],
+    "note": "Multi-speaker session"
   },
   {
     "title": "State of STAC",
@@ -398,13 +399,13 @@
     "location": "Prizren, Kosovo",
     "kind": "talk",
     "status": "delivered",
-    "note": "Co-presented.",
     "links": [
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2023/talk/FAHXCM/"
       }
-    ]
+    ],
+    "note": "Co-presented"
   },
   {
     "title": "An overview of Cloud-Native Geospatial",
@@ -483,13 +484,13 @@
     "location": null,
     "kind": "talk",
     "status": "delivered",
-    "note": "Session not listed publicly.",
     "links": [
       {
         "label": "speaker page",
         "url": "https://2022.satsummit.io/speakers/matthew-hanson/"
       }
-    ]
+    ],
+    "note": "Session not listed publicly"
   },
   {
     "title": "The State of Cloud-Native Geospatial",
@@ -533,7 +534,6 @@
     "location": "Florence, Italy",
     "kind": "talk",
     "status": "delivered",
-    "note": "Co-presented.",
     "links": [
       {
         "label": "abstract",
@@ -543,7 +543,8 @@
         "label": "video",
         "url": "https://www.youtube.com/watch?v=yhgQWtyyWJE"
       }
-    ]
+    ],
+    "note": "Co-presented"
   },
   {
     "title": "Overview: SpatioTemporal Asset Catalogs (STAC)",
@@ -598,13 +599,13 @@
     "location": "virtual",
     "kind": "talk",
     "status": "delivered",
-    "note": "Multi-speaker session.",
     "links": [
       {
         "label": "session",
         "url": "https://2021esipwintermeeting.sched.com/event/g49x"
       }
-    ]
+    ],
+    "note": "Multi-speaker session"
   },
   {
     "title": "STAC and Cloud-Optimized Data",
@@ -614,13 +615,13 @@
     "location": "virtual",
     "kind": "talk",
     "status": "delivered",
-    "note": "Multi-speaker session.",
     "links": [
       {
         "label": "session",
         "url": "https://2020esipsummermeeting.sched.com/event/cIvF/"
       }
-    ]
+    ],
+    "note": "Multi-speaker session"
   },
   {
     "title": "A Geospatial Cloud",
@@ -645,7 +646,6 @@
     "location": "Bethesda, MD",
     "kind": "talk",
     "status": "delivered",
-    "note": "Opened the Geospatial Interoperability with STAC session.",
     "links": [
       {
         "label": "session",
@@ -659,7 +659,8 @@
         "label": "slides",
         "url": "https://docs.google.com/presentation/d/1nLrKkPi3c3gCONh_2vg_QfCsJreonwc_4LgW7OYeCHM/edit"
       }
-    ]
+    ],
+    "note": "Opened the Geospatial Interoperability with STAC session"
   },
   {
     "title": "STAC (lightning talk)",
@@ -684,13 +685,13 @@
     "location": "Durham, NH",
     "kind": "talk",
     "status": "delivered",
-    "note": "Scalability and reproducibility in the geosciences through open standards.",
     "links": [
       {
         "label": "slides",
         "url": "/presentations/2019/unh-open.html"
       }
-    ]
+    ],
+    "subtitle": "Scalability and reproducibility in the geosciences through open standards"
   },
   {
     "title": "How Open Communities are Revolutionizing Science",
@@ -700,7 +701,6 @@
     "location": "Bucharest",
     "kind": "talk",
     "status": "delivered",
-    "note": "Opening keynote.",
     "links": [
       {
         "label": "slides",
@@ -714,7 +714,8 @@
         "label": "video",
         "url": "https://media.ccc.de/v/bucharest-471-how-open-is-revolutionizing-science"
       }
-    ]
+    ],
+    "note": "Opening keynote"
   },
   {
     "title": "STAC and the Open-Source Ecosystem",
@@ -786,7 +787,7 @@
     "location": null,
     "kind": "talk",
     "status": "delivered",
-    "note": "A MODIS cloud-frequency data story."
+    "subtitle": "A MODIS cloud-frequency data story"
   },
   {
     "title": "sat-utils",
@@ -796,13 +797,13 @@
     "location": "Washington, DC",
     "kind": "talk",
     "status": "delivered",
-    "note": "Workshop, Analysis at Scale track.",
     "links": [
       {
         "label": "speaker page",
         "url": "https://2018.satsummit.io/speakers/matt-hanson/"
       }
-    ]
+    ],
+    "note": "Workshop, Analysis at Scale track"
   },
   {
     "title": "Finding and Using Public Earth Imagery with sat-utils",
@@ -812,7 +813,7 @@
     "location": "Dar es Salaam",
     "kind": "talk",
     "status": "delivered",
-    "note": "A talk cut and a workshop cut."
+    "note": "A talk cut and a workshop cut"
   },
   {
     "title": "Matthew Hanson on STACspec Success and Guerrilla Standards",
@@ -822,13 +823,13 @@
     "location": "podcast",
     "kind": "podcast",
     "status": "delivered",
-    "note": "Community-driven standards, and why flexibility is the enemy of interoperability.",
     "links": [
       {
         "label": "episode",
         "url": "https://greatdataproducts.com/episodes/2025/12/hanson-stac/"
       }
-    ]
+    ],
+    "subtitle": "Community-driven standards, and why flexibility is the enemy of interoperability"
   },
   {
     "title": "Open-source panel",
@@ -838,12 +839,13 @@
     "location": "Alberta",
     "kind": "panel",
     "status": "delivered",
-    "note": "Moderator — on accountability, standards, and diversity in open source.",
     "links": [
       {
         "label": "recap",
         "url": "https://gno-sys.com/north51-highlights-recap/"
       }
-    ]
+    ],
+    "note": "Moderator",
+    "subtitle": "On accountability, standards, and diversity in open source"
   }
 ]

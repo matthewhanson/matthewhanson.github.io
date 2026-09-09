@@ -170,15 +170,15 @@ section { margin-top: 2.9rem; }
    coverage from the body face and stays crisp at any size */
 .entries > li {
     position: relative;
-    margin: 0 0 1.3rem;
-    padding-left: 1.2rem;
+    margin: 0 0 1.75rem;
+    padding-left: 1.25rem;
 }
 
 .entries > li::before {
     content: "";
     position: absolute;
     left: 1px;
-    top: 0.62em;
+    top: 0.52em;
     width: 5px;
     height: 5px;
     background: var(--oxblood);
@@ -186,26 +186,56 @@ section { margin-top: 2.9rem; }
     opacity: 0.85;
 }
 
-.entry-title {
-    display: block;
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 600;
-    line-height: 1.35;
-}
+/* Hierarchy inside an entry, in the order the eye should take it:
+   the date/venue is a quiet kicker ABOVE the title so it reads as filing
+   information rather than competing with it; the title is the one loud line;
+   the subtitle belongs to the title and carries the context the title alone
+   loses; an annotation is a fact about the delivery, so it is the smallest
+   thing on the row. */
 
 .entry-meta {
     display: block;
-    margin-top: 0.15rem;
-    font-size: 0.95rem;
+    margin-bottom: 0.18rem;
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    letter-spacing: 0.03em;
     color: var(--muted);
+}
+
+.entry-title {
+    display: block;
+    font-family: var(--serif);
+    font-size: 1.32rem;
+    font-weight: 600;
+    line-height: 1.26;
+    color: var(--ink);
+}
+
+.entry-sub {
+    display: block;
+    margin-top: 0.16rem;
+    font-family: var(--serif);
+    font-size: 1.06rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: var(--ink-2);
 }
 
 .entry-note {
     display: block;
-    margin-top: 0.24rem;
-    font-size: 0.95rem;
-    color: var(--ink-2);
+    margin-top: 0.3rem;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* a sentence-length annotation shouts in caps; keep it sentence case */
+.entry-note-long {
+    text-transform: none;
+    letter-spacing: 0.01em;
+    font-size: 0.8rem;
 }
 
 /* out-links on an archive entry — abstract, video, slides */
@@ -273,7 +303,7 @@ section { margin-top: 2.9rem; }
     border: 1.5px solid var(--gold);
     width: 6px;
     height: 6px;
-    top: 0.56em;
+    top: 0.45em;
     transform: none;
     border-radius: 50%;
     opacity: 1;
@@ -314,8 +344,8 @@ section { margin-top: 2.9rem; }
 
 /* Speaking next is the most actionable block on the page, so its dates carry
    the ink rather than sitting in the same grey as a 2018 archive row. */
-.coll-next .entry-meta { color: var(--ink-2); }
-.coll-next .entry-title { font-size: 1.22rem; }
+.coll-next .entry-meta { color: var(--oxblood); }
+.coll-next .entry-title { font-size: 1.4rem; }
 
 /* Demos — interactive things, so they get room rather than a line. */
 .cards {

@@ -67,9 +67,11 @@ function talkEntry(t, { showYear = false } = {}) {
     : t.when
   const place = [t.venue, t.location].filter(Boolean).map(esc).join(' · ')
   return `\t\t\t<li>
-\t\t\t\t<span class="entry-title">${esc(t.title)}</span>
-\t\t\t\t<span class="entry-meta">${[esc(when), place].filter(Boolean).join(' &middot; ')}</span>${
-    t.note ? `\n\t\t\t\t<span class="entry-note">${esc(t.note)}</span>` : ''}${
+\t\t\t\t<span class="entry-meta">${[esc(when), place].filter(Boolean).join(' &middot; ')}</span>
+\t\t\t\t<span class="entry-title">${esc(t.title)}</span>${
+    t.subtitle ? `\n\t\t\t\t<span class="entry-sub">${esc(t.subtitle)}</span>` : ''}${
+    t.note ? `\n\t\t\t\t<span class="entry-note${
+      t.note.length > 24 ? ' entry-note-long' : ''}">${esc(t.note)}</span>` : ''}${
     linkList(t.links)}
 \t\t\t</li>`
 }
@@ -78,8 +80,8 @@ function postEntry(p) {
   const src = sourceOf(p.url)
   const title = p.url ? `<a href="${esc(p.url)}">${esc(p.title)}</a>` : esc(p.title)
   return `\t\t\t<li>
-\t\t\t\t<span class="entry-title">${title}</span>
 \t\t\t\t<span class="entry-meta">${[esc(p.date), src ? esc(src) : null].filter(Boolean).join(' &middot; ')}</span>
+\t\t\t\t<span class="entry-title">${title}</span>
 \t\t\t</li>`
 }
 

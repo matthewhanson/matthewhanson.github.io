@@ -49,6 +49,12 @@ Nothing date-relative is ever typed by hand: "upcoming" is computed from today a
 entry's `sort` key, and the talk counts are derived. An earlier hand-typed `Today` flag had
 already gone stale, which is why.
 
+**`subtitle` and `note` are different things.** A subtitle is part of the talk's identity
+("From specification to infrastructure") and renders with the title, in italic, because it
+usually carries the context the title alone loses. A `note` is a fact about the delivery
+("Co-presented", "Opening keynote") and renders as a small label under it. They used to be
+one field, which is why entries read as a flat wall.
+
 Each entry keeps `when` as a verbatim display string (`"6–9 Oct 2026"`, `"year unconfirmed"`) plus
 an optional ISO `sort` key for ordering — so date ranges and genuine uncertainty survive instead of
 being flattened into a fake precision.
