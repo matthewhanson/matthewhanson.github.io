@@ -27,8 +27,12 @@ this site is the index and hosts almost nothing.
 
 `kind` in `data/talks.json` splits speaking into `talk`, `podcast`, and `panel`; the renderer gives
 each its own section rather than lumping them together. Markers encode where a thing lives: an
-oxblood diamond for a talk, a hollow gold ring for writing hosted elsewhere, a filled gold circle
-for a podcast. Every entry links out to wherever the abstract, video, slides, or
+oxblood diamond for a talk, a hollow brass ring for writing hosted elsewhere, a filled brass circle
+for a podcast.
+
+`--gold` and `--brass` are the same idea at two lightnesses, and the split is deliberate: gold is
+tuned to the avatar and only ever sits against it, while a 6px marker on cream needs 3:1 to be
+visible at all. `#d6af5c` measures 1.8:1 there, so markers use brass. Every entry links out to wherever the abstract, video, slides, or
 post already lives.
 
 ## Cache-busting the stylesheet
@@ -91,7 +95,8 @@ The palette and type are carried over from the **`thurston`** presentation theme
 | `--ink` | `#1b2233` | near-black ink, faintly blue |
 | `--muted` | `#6f685a` | meta and captions — 4.8:1 on paper |
 | `--oxblood` | `#8c2f2f` | rules, markers, links |
-| `--gold` | `#b8894b` | the foil — portrait ring and the writing markers |
+| `--gold` | `#d6af5c` | the foil — the avatar's ground and its ring |
+| `--brass` | `#9e7239` | the same foil where it must be *seen* — 3.7:1 on paper |
 
 Type is Source Serif 4 (headings, entry titles), Inter (body), IBM Plex Mono (labels, meta,
 colophon), all from Google Fonts. A `prefers-color-scheme: dark` block flips the sheet to ink.

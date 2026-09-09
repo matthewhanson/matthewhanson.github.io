@@ -18,7 +18,11 @@
 
     /* Two accents — letterpress was genuinely two-colour */
     --oxblood:    #8c2f2f;  /* rules, markers, links */
-    --gold:       #b8894b;  /* the foil, used sparingly */
+    --gold:       #d6af5c;  /* the foil — matches the avatar's ground */
+    --brass:      #9e7239;  /* the foil, where it must actually be seen:
+                               3.7:1 on paper. #d6af5c is 1.8:1, which is fine
+                               for a ring against the portrait and far too
+                               faint for a 6px marker. */
 
     --hairline:   rgba(27, 34, 51, 0.22);
     --hairline-soft: rgba(27, 34, 51, 0.10);
@@ -300,7 +304,7 @@ section { margin-top: 2.9rem; }
    somewhere else, and the one other place gold does any work. */
 .coll-writing .entries > li::before {
     background: transparent;
-    border: 1.5px solid var(--gold);
+    border: 1.5px solid var(--brass);
     width: 6px;
     height: 6px;
     top: 0.45em;
@@ -314,7 +318,7 @@ section { margin-top: 2.9rem; }
    gold says "lives on someone else's host", and the fill separates audio from
    the written pieces above it. */
 .coll-audio .entries > li::before {
-    background: var(--gold);
+    background: var(--brass);
     border: 0;
     width: 6px;
     height: 6px;
@@ -371,7 +375,7 @@ section { margin-top: 2.9rem; }
     margin: 0;
     padding: 0.85rem 0.95rem;
     background: var(--paper-2);
-    border-left: 2px solid var(--gold);
+    border-left: 2px solid var(--brass);
 }
 
 .cards > li::before { content: none; }
@@ -494,7 +498,8 @@ footer a:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
         --ink-2:   #c3bcae;
         --muted:   #9a9281;   /* 5.1:1 on ink (was #8d8676, 4.4:1) */
         --oxblood: #d4796f;   /* lifted to 5.1:1 on ink (was #c86a63, 4.3:1) */
-        --gold:    #cfa46b;
+        --gold:    #d9b47a;
+        --brass:   #cfa46b;   /* 6.9:1 on the ink sheet */
         --hairline: rgba(240, 233, 219, 0.20);
         --hairline-soft: rgba(240, 233, 219, 0.11);
     }
