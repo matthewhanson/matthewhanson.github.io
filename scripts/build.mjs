@@ -156,9 +156,20 @@ const regions = {
 // ---- apply -----------------------------------------------------------------
 
 let changed = 0
+let orphans = 0
 for (const file of ['index.html', 'talks/index.html']) {
   const path = join(ROOT, file)
   const before = readFileSync(path, 'utf8')
+
+  // A BEGIN marker with no matching region is invisible rot: the build stops
+  // touching that block and it silently freezes at whatever it last rendered.
+  // This happened once already, to a section that had been split in two.
+  for (const [, name] of before.matchAll(/<!-- BEGIN:([\w-]+) -->/g)) {
+    if (!(name in regions)) {
+      console.error(`  ORPHANED MARKER  ${file}  BEGIN:${name} — no region renders this; it is frozen`)
+      orphans++
+    }
+  }
   let after = before
   for (const [name, body] of Object.entries(regions)) {
     const re = new RegExp(`(<!-- BEGIN:${name} -->)[\\s\\S]*?(<!-- END:${name} -->)`, 'g')
@@ -175,4 +186,5 @@ for (const file of ['index.html', 'talks/index.html']) {
 }
 
 console.log(`\n  ${deliveredCount} delivered talks · ${upcoming.length} upcoming · ${podcasts.length} podcast(s) · ${panels.length} panel(s) · ${posts.length} posts`)
+if (orphans) { console.error(`\n  ${orphans} orphaned marker(s) — remove them or add a region`); process.exit(1) }
 if (CHECK && changed) { console.error('\n  --check: output is stale, run `node scripts/build.mjs`'); process.exit(1) }

@@ -310,6 +310,20 @@ section { margin-top: 2.9rem; }
 }
 
 /* Code — repositories read as code. Mono title, upright square marker. */
+/* Podcasts — also outbound, so also gold, but filled rather than hollow:
+   gold says "lives on someone else's host", and the fill separates audio from
+   the written pieces above it. */
+.coll-audio .entries > li::before {
+    background: var(--gold);
+    border: 0;
+    width: 6px;
+    height: 6px;
+    top: 0.45em;
+    transform: none;
+    border-radius: 50%;
+    opacity: 1;
+}
+
 /* Projects — deliberately not a bulleted feed. A compact reference block:
    monospace name, one-line gloss, no markers, tight leading. The complaint it
    answers is that it used to blend into the dated lists above it. */
