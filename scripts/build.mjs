@@ -55,8 +55,8 @@ const sourceOf = (url) => {
   } catch { return null }
 }
 
-const linkList = (links) =>
-  !links?.length ? '' : `\n\t\t\t\t<span class="entry-links">${links
+const linkList = (links, depth = 4) =>
+  !links?.length ? '' : `\n${'\t'.repeat(depth)}<span class="entry-links">${links
     .map((l) => `<a href="${esc(l.url)}">${esc(l.label)}</a>`).join(' ')}</span>`
 
 // ---- renderers -------------------------------------------------------------
@@ -67,22 +67,36 @@ function talkEntry(t, { showYear = false } = {}) {
     : t.when
   const place = [t.venue, t.location].filter(Boolean).map(esc).join(' · ')
   return `\t\t\t<li>
-\t\t\t\t<span class="entry-title">${esc(t.title)}</span>
-\t\t\t\t<span class="entry-meta">${[esc(when), place].filter(Boolean).join(' &middot; ')}</span>${
-    t.note ? `\n\t\t\t\t<span class="entry-note">${esc(t.note)}</span>` : ''}${linkList(t.links)}
+\t\t\t\t<span class="entry-when">${esc(when ?? '')}</span>
+\t\t\t\t<span class="entry-body">
+\t\t\t\t\t<span class="entry-title">${esc(t.title)}</span>${
+    place ? `\n\t\t\t\t\t<span class="entry-where">${place}</span>` : ''}${
+    t.note ? `\n\t\t\t\t\t<span class="entry-note">${esc(t.note)}</span>` : ''}${
+    linkList(t.links, 5)}
+\t\t\t\t</span>
 \t\t\t</li>`
 }
 
 function postEntry(p) {
   const src = sourceOf(p.url)
-  const title = p.url
-    ? `<a href="${esc(p.url)}">${esc(p.title)}</a>`
-    : esc(p.title)
+  const title = p.url ? `<a href="${esc(p.url)}">${esc(p.title)}</a>` : esc(p.title)
   return `\t\t\t<li>
-\t\t\t\t<span class="entry-title">${title}</span>
-\t\t\t\t<span class="entry-meta">${[esc(p.date), src ? esc(src) : null].filter(Boolean).join(' &middot; ')}</span>
+\t\t\t\t<span class="entry-when">${esc(p.date ?? '')}</span>
+\t\t\t\t<span class="entry-body">
+\t\t\t\t\t<span class="entry-title">${title}</span>${
+    src ? `\n\t\t\t\t\t<span class="entry-where">${esc(src)}</span>` : ''}
+\t\t\t\t</span>
 \t\t\t</li>`
 }
+
+const years = () => [...new Set(delivered.map((t) => t.sort?.slice(0, 4)).filter(Boolean))]
+  .sort().reverse()
+
+// A 45-entry record needs a way in other than scrolling.
+const yearIndex = () => `\t\t<nav class="yearnav" aria-label="Jump to year">\n${years()
+  .map((y) => `\t\t\t<a href="#y${y}">${y}<span class="yearnav-n">${
+    delivered.filter((t) => t.sort?.slice(0, 4) === y).length}</span></a>`)
+  .join('\n')}\n\t\t</nav>`
 
 function demoEntry(d) {
   return `\t\t\t<li>
@@ -121,9 +135,10 @@ const regions = {
       .sort().reverse()
     return years.map((y) => {
       const rows = delivered.filter((t) => t.sort?.slice(0, 4) === y)
-      return `\t\t<h2 class="label">${y}</h2>\n${list(rows.map((t) => talkEntry(t)))}`
+      return `\t\t<h2 class="label year" id="y${y}">${y}<span class="year-n">${rows.length}</span></h2>\n${list(rows.map((t) => talkEntry(t)))}`
     }).join('\n\n')
   })(),
+  'archive-yearnav': yearIndex(),
   'archive-sideshow': list(sideshow.map((t) => talkEntry(t, { showYear: true }))),
   'archive-writing': list(posts.map(postEntry)),
   'archive-totals': `${deliveredCount} talks, workshops, and invited sessions`

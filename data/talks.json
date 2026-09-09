@@ -152,6 +152,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2025/talk/ASNWTC/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=C18FRsOpQPk"
       }
     ]
   },
@@ -167,6 +171,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2025/talk/PJDVGR/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=UOywxMjl5Sg"
       }
     ]
   },
@@ -182,6 +190,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2025/talk/DZRYCJ/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=D-N_v9U4Pc8"
       }
     ]
   },
@@ -197,6 +209,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2025/talk/F8BZXS/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=hFAPn7bLiiw"
       }
     ]
   },
@@ -277,6 +293,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2024/talk/GSAVCT/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=8PQPU3tL_qk"
       }
     ]
   },
@@ -293,6 +313,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-2024/talk/3EWQR9/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=FPaDfWoLdBo"
       }
     ]
   },
@@ -685,6 +709,10 @@
       {
         "label": "speaker page",
         "url": "https://2019.foss4g.org/speakers/matthew-hanson/"
+      },
+      {
+        "label": "video",
+        "url": "https://media.ccc.de/v/bucharest-471-how-open-is-revolutionizing-science"
       }
     ]
   },
@@ -700,6 +728,10 @@
       {
         "label": "slides",
         "url": "https://docs.google.com/presentation/d/13wuBZWbjxD9aite2O-Bf2m9CNTakh_OVAueIlyM1Buw/edit"
+      },
+      {
+        "label": "video",
+        "url": "https://media.ccc.de/v/bucharest-424-stac-and-os-software"
       }
     ]
   },
@@ -715,6 +747,10 @@
       {
         "label": "slides",
         "url": "https://docs.google.com/presentation/d/18Jn-DAkniYFn9dn7i0W6FYz9imohQaSrjpo5Z_wQss8/edit"
+      },
+      {
+        "label": "video",
+        "url": "https://media.ccc.de/v/bucharest-430-how-open-source-software-made-cubesatdata-com-possible"
       }
     ]
   },
