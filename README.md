@@ -8,7 +8,7 @@ the generated html is committed and GitHub Pages serves it as-is.
 index.html            home — bio, speaking, writing, open source
 talks/index.html      the complete record: talks, panels, writing
 css/main.css          letterpress palette + type, shared by both pages
-data/talks.json       ← single source for every talk, panel, and podcast
+data/talks.json       ← every talk, panel, and podcast (split by `kind`)
 data/posts.json       ← the outbound writing
 data/demos.json       ← demo apps (empty for now)
 scripts/build.mjs     renders the data into both pages
@@ -22,8 +22,13 @@ images/
 
 ## What this site is
 
-Three collections — **talks**, **writing**, and (eventually) **demo apps** — where this site is the
-index and hosts almost nothing. Every entry links out to wherever the abstract, video, slides, or
+Four collections — **talks**, **writing**, **podcasts**, and (eventually) **demo apps** — where
+this site is the index and hosts almost nothing.
+
+`kind` in `data/talks.json` splits speaking into `talk`, `podcast`, and `panel`; the renderer gives
+each its own section rather than lumping them together. Markers encode where a thing lives: an
+oxblood diamond for a talk, a hollow gold ring for writing hosted elsewhere, a filled gold circle
+for a podcast. Every entry links out to wherever the abstract, video, slides, or
 post already lives.
 
 ## Cache-busting the stylesheet

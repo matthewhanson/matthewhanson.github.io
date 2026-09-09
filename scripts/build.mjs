@@ -37,7 +37,8 @@ const bySortAsc = (a, b) => String(a.sort ?? '').localeCompare(String(b.sort ?? 
 const speaking = talks.filter((t) => t.kind === 'talk')
 const upcoming = speaking.filter(isUpcoming).sort(bySortAsc)
 const delivered = speaking.filter((t) => !isUpcoming(t)).sort(bySortDesc)
-const sideshow = talks.filter((t) => t.kind !== 'talk').sort(bySortDesc)
+const podcasts = talks.filter((t) => t.kind === 'podcast').sort(bySortDesc)
+const panels = talks.filter((t) => t.kind === 'panel').sort(bySortDesc)
 
 // Where an outbound post actually lives. On a site that hosts nothing, naming the
 // host is the useful signal — and it is what makes link rot legible.
@@ -116,6 +117,9 @@ const regions = {
     : `\t\t<p class="empty">Nothing scheduled at the moment.</p>`,
   recent: list(delivered.slice(0, 4).map((t) => talkEntry(t, { showYear: true }))),
   writing: list(posts.slice(0, 4).map(postEntry)),
+  podcasts: podcasts.length
+    ? list(podcasts.map((t) => talkEntry(t, { showYear: true })))
+    : `\t\t<p class="empty">None yet.</p>`,
   demos: demos.length
     ? list(demos.map(demoEntry), 'entries cards')
     : `\t\t<p class="empty">Nothing published yet.</p>`,
@@ -134,11 +138,19 @@ const regions = {
     }).join('\n\n')
   })(),
   'archive-yearnav': yearIndex(),
-  'archive-sideshow': list(sideshow.map((t) => talkEntry(t, { showYear: true }))),
+  'archive-podcasts': podcasts.length
+    ? list(podcasts.map((t) => talkEntry(t, { showYear: true })))
+    : `\t\t<p class="empty">None yet.</p>`,
+  'archive-panels': panels.length
+    ? list(panels.map((t) => talkEntry(t, { showYear: true })))
+    : `\t\t<p class="empty">None yet.</p>`,
   'archive-writing': list(posts.map(postEntry)),
-  'archive-totals': `${deliveredCount} talks, workshops, and invited sessions`
-    + ` &middot; ${sideshow.length} panel${sideshow.length === 1 ? '' : 's'} and podcast${sideshow.length === 1 ? '' : 's'}`
-    + ` &middot; ${posts.length} posts`,
+  'archive-totals': [
+    `${deliveredCount} talks, workshops, and invited sessions`,
+    `${podcasts.length} podcast${podcasts.length === 1 ? '' : 's'}`,
+    `${panels.length} panel${panels.length === 1 ? '' : 's'}`,
+    `${posts.length} posts`,
+  ].join(' &middot; '),
 }
 
 // ---- apply -----------------------------------------------------------------
@@ -162,5 +174,5 @@ for (const file of ['index.html', 'talks/index.html']) {
   } else console.log(`  unchanged ${file}`)
 }
 
-console.log(`\n  ${deliveredCount} delivered talks · ${upcoming.length} upcoming · ${sideshow.length} panels/podcasts · ${posts.length} posts`)
+console.log(`\n  ${deliveredCount} delivered talks · ${upcoming.length} upcoming · ${podcasts.length} podcast(s) · ${panels.length} panel(s) · ${posts.length} posts`)
 if (CHECK && changed) { console.error('\n  --check: output is stale, run `node scripts/build.mjs`'); process.exit(1) }

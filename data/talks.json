@@ -820,7 +820,6 @@
     "when": "Dec 2025",
     "sort": "2025-12-00",
     "venue": "Great Data Products",
-    "location": "podcast",
     "kind": "podcast",
     "status": "delivered",
     "links": [
@@ -847,5 +846,20 @@
     ],
     "note": "Moderator",
     "subtitle": "On accountability, standards, and diversity in open source"
+  },
+  {
+    "title": "Vibe Coding and the Fragmentation of Open Source",
+    "when": "3 Feb 2026",
+    "sort": "2026-02-03",
+    "subtitle": "Why machine-writing code is the best, and most dangerous, thing for geospatial",
+    "venue": "MapScaping",
+    "kind": "podcast",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "episode",
+        "url": "https://mapscaping.podbean.com/e/vibe-coding-and-the-fragmentation-of-open-source/"
+      }
+    ]
   }
 ]
