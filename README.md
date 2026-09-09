@@ -16,7 +16,6 @@ scripts/check-links.mjs   reports which outbound links have rotted
 presentations/        the 2018–2020 reveal-md decks, served at their original urls
 images/
   avatar.png          the portrait, recoloured to the site palette
-  avatar-classic.png  the original yellow version, kept
   favicon.png
 ```
 
