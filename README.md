@@ -43,6 +43,12 @@ span the cached css had no rule for. The symptom looks like a design bug and isn
 
 ## Editing
 
+Each home-page collection shows the newest four and renders its own **All … →** link, but
+only when there is more to show — so Podcasts has none while there are two of them. The
+wording and the cut-off both live in `preview()` in `build.mjs`; don't hand-write a
+"more" link in the html, which is how "Complete record — 45 talks" and "All posts" ended
+up in the same page.
+
 **Content lives in `data/*.json`. Never hand-edit inside a `<!-- BEGIN:… -->` marker** — the build
 overwrites those regions. Everything else in the html (the bio, the prose, the colophon) is hand
 written and never touched.

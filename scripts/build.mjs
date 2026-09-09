@@ -105,25 +105,37 @@ function demoEntry(d) {
 const list = (items, cls = 'entries') =>
   `\t\t<ul class="${cls}">\n${items.join('\n')}\n\t\t</ul>`
 
+// A home-page collection shows the newest few and links to the rest. The link
+// only appears when there is a rest, and it is always phrased the same way —
+// these sections had drifted into "Complete record — 45 talks" vs "All posts".
+const preview = (items, render, { limit = 4, all, href }) => {
+  const shown = items.slice(0, limit)
+  const body = shown.length
+    ? list(shown.map(render))
+    : `\t\t<p class="empty">None yet.</p>`
+  return items.length > limit
+    ? `${body}\n\t\t<p class="more"><a href="${href}">All ${all} &rarr;</a></p>`
+    : body
+}
+
 // ---- region contents -------------------------------------------------------
 
 const deliveredCount = delivered.length
-const firstYear = speaking.map((t) => t.sort).filter(Boolean).sort()[0]?.slice(0, 4)
 
 const regions = {
   // home page
   upcoming: upcoming.length
     ? list(upcoming.map((t) => talkEntry(t, { showYear: true })))
     : `\t\t<p class="empty">Nothing scheduled at the moment.</p>`,
-  recent: list(delivered.slice(0, 4).map((t) => talkEntry(t, { showYear: true }))),
-  writing: list(posts.slice(0, 4).map(postEntry)),
-  podcasts: podcasts.length
-    ? list(podcasts.map((t) => talkEntry(t, { showYear: true })))
-    : `\t\t<p class="empty">None yet.</p>`,
+  recent: preview(delivered, (t) => talkEntry(t, { showYear: true }),
+    { all: 'talks', href: '/talks/' }),
+  writing: preview(posts, postEntry,
+    { all: 'writing', href: '/talks/#writing' }),
+  podcasts: preview(podcasts, (t) => talkEntry(t, { showYear: true }),
+    { all: 'podcasts', href: '/talks/#podcasts' }),
   demos: demos.length
     ? list(demos.map(demoEntry), 'entries cards')
     : `\t\t<p class="empty">Nothing published yet.</p>`,
-  talkcount: `${deliveredCount} talks since ${firstYear}`,
 
   // talks page
   'archive-upcoming': upcoming.length
