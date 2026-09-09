@@ -114,7 +114,14 @@ async function pool(items, n, fn) {
 if (!JSON_OUT) console.log(`\n  Checking ${unique.length} unique urls from ${targets.length} references…\n`)
 
 const results = await pool(unique, 8, async (u) => {
-  const r = await probe(u.url)
+  let r = await probe(u.url)
+  // A slow host is not a dead one. sched.com in particular times out under any
+  // concurrency, and a checker that reports false deaths is one you stop
+  // believing — so give a timeout exactly one unhurried second chance.
+  if (r.status === 0 && !r.local) {
+    await new Promise((res) => setTimeout(res, 1500))
+    r = await probe(u.url)
+  }
   const dead = r.status === 0 || r.status >= 400
   const moved = !dead && r.final && r.final !== u.url
   // no point asking archive.org about a path on this site
