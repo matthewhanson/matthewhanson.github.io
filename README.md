@@ -26,6 +26,13 @@ Three collections — **talks**, **writing**, and (eventually) **demo apps** —
 index and hosts almost nothing. Every entry links out to wherever the abstract, video, slides, or
 post already lives.
 
+## Cache-busting the stylesheet
+
+Both pages link `css/main.css?v=N`. **Bump `N` in both html files whenever you change
+the css.** Without it, Cloudflare and browsers happily serve a stale stylesheet against
+fresh html — which once rendered a year heading as `20257`, because the html had a count
+span the cached css had no rule for. The symptom looks like a design bug and isn't one.
+
 ## Editing
 
 **Content lives in `data/*.json`. Never hand-edit inside a `<!-- BEGIN:… -->` marker** — the build

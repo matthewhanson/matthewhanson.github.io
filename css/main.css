@@ -28,7 +28,7 @@
     --mono:  'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
     --prose: 34rem;   /* reading measure — paragraphs only */
-    --measure: 54rem;  /* the sheet: lists need room for a date rail */
+    --measure: 38rem;  /* the sheet */
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -166,64 +166,38 @@ section { margin-top: 2.9rem; }
     list-style: none;
 }
 
+/* vintage catalogue marker — a rotated square, so it needs no glyph
+   coverage from the body face and stays crisp at any size */
 .entries > li {
     position: relative;
+    margin: 0 0 1.3rem;
+    padding-left: 1.2rem;
 }
 
-/* A dated row, not a stacked block. The date sits in its own rail so a run of
-   entries scans as a column of dates with content beside it — which is what
-   makes a 45-entry record navigable instead of one undifferentiated list. */
-.entries > li {
-    display: grid;
-    grid-template-columns: 9.5rem 1fr;
-    gap: 0 1.25rem;
-    padding: 0.7rem 0 0.7rem 0;
-    border-top: 1px solid var(--hairline-soft);
+.entries > li::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    background: var(--oxblood);
+    transform: rotate(45deg);
+    opacity: 0.85;
 }
-
-.entries > li:last-child { border-bottom: 1px solid var(--hairline-soft); }
-
-.entries > li::before { content: none; }
-
-.entry-when {
-    font-family: var(--mono);
-    font-size: 0.8rem;
-    line-height: 1.75;
-    letter-spacing: 0.01em;
-    color: var(--muted);
-    text-align: right;
-    /* a hairline tick tying the date to its row */
-    border-right: 1px solid var(--hairline-soft);
-    padding-right: 1.1rem;
-    margin-right: -0.15rem;
-}
-
-.entry-body { min-width: 0; }
 
 .entry-title {
     display: block;
     font-family: var(--serif);
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
-    line-height: 1.32;
+    line-height: 1.35;
 }
 
-.entry-where {
-    display: block;
-    margin-top: 0.1rem;
-    font-family: var(--mono);
-    font-size: 0.8rem;
-    letter-spacing: 0.01em;
-    color: var(--muted);
-}
-
-/* still used by the hand-written open-source list */
 .entry-meta {
     display: block;
-    margin-top: 0.12rem;
-    font-family: var(--mono);
-    font-size: 0.8125rem;
-    letter-spacing: 0.01em;
+    margin-top: 0.15rem;
+    font-size: 0.95rem;
     color: var(--muted);
 }
 
@@ -244,60 +218,31 @@ section { margin-top: 2.9rem; }
 
 .entry-links a { margin-right: 0.75rem; }
 
-/* ---------- Site nav ---------- */
-
-.sitenav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 1.5rem;
-    margin: 1.1rem 0 0;
-    padding: 0;
-    list-style: none;
-    font-family: var(--mono);
-    font-size: 0.82rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-}
-
-.sitenav a { border-bottom: 0; color: var(--ink-2); }
-.sitenav a:hover { color: var(--oxblood); }
-.sitenav a[aria-current="page"] { color: var(--oxblood); border-bottom: 2px solid var(--oxblood); }
-
 /* ---------- Year index ----------
-   The archive's way in. A row of years with counts, so the shape of the record
-   is visible at a glance and any year is one click away. */
+   The archive's one navigation aid: a quiet row of years, so any year is a
+   click away instead of a scroll. Deliberately understated — it is a utility,
+   not a menu. */
 
 .yearnav {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4rem;
-    margin: 0 0 2.4rem;
+    gap: 0 0.85rem;
+    margin: 0 0 2.2rem;
 }
 
 .yearnav a {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.32rem;
-    padding: 0.3rem 0.6rem;
-    border: 1px solid var(--hairline);
-    border-bottom-color: var(--hairline);
+    padding: 0 0.1rem;
+    border-bottom: 1px solid var(--hairline-soft);
     font-family: var(--mono);
     font-size: 0.82rem;
-    color: var(--ink-2);
-    background: var(--paper-2);
-}
-
-.yearnav a:hover {
-    border-color: var(--oxblood);
-    color: var(--oxblood);
-}
-
-.yearnav-n, .year-n {
-    font-size: 0.68em;
     color: var(--muted);
 }
 
-.year-n { margin-left: 0.55rem; letter-spacing: 0; }
+.yearnav a:hover {
+    color: var(--oxblood);
+    border-bottom-color: var(--oxblood);
+}
+
 
 /* year headings anchor the scroll and stay visible while their rows pass */
 .label.year {
@@ -321,36 +266,56 @@ section { margin-top: 2.9rem; }
    different marker and title face, so the eye can tell them apart while
    scrolling. */
 
-/* Talks — the dated spine. Oxblood diamond, serif title. (the default above) */
-
-/* Writing — outbound, so the rail is gold: this lives on someone else's site. */
-.coll-writing .entry-when { border-right-color: rgba(184, 137, 75, 0.5); }
-.coll-writing .entry-where { color: var(--gold); }
+/* Writing — outbound. A hollow gold ring: the mark of something that lives
+   somewhere else, and the one other place gold does any work. */
+.coll-writing .entries > li::before {
+    background: transparent;
+    border: 1.5px solid var(--gold);
+    width: 6px;
+    height: 6px;
+    top: 0.56em;
+    transform: none;
+    border-radius: 50%;
+    opacity: 1;
+}
 
 /* Code — repositories read as code. Mono title, upright square marker. */
-.coll-code .entry-title {
+/* Projects — deliberately not a bulleted feed. A compact reference block:
+   monospace name, one-line gloss, no markers, tight leading. The complaint it
+   answers is that it used to blend into the dated lists above it. */
+.projects dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.34rem 1.1rem;
+    margin: 0;
+    align-items: baseline;
+}
+
+.projects dt {
     font-family: var(--mono);
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 500;
-    letter-spacing: -0.01em;
+    white-space: nowrap;
 }
 
-/* Code — no dates, so the rail collapses and the row runs full width. */
-.coll-code .entries > li { grid-template-columns: 1fr; }
-.coll-code .entry-meta { margin-top: 0.2rem; }
-
-/* Speaking next is the most useful block on the home page, so it gets the
-   inked panel rather than sitting in the same grey as the archive. */
-.coll-next .entries > li {
-    background: var(--paper-2);
-    border-top-color: var(--hairline);
-    padding-left: 1rem;
-    padding-right: 1rem;
+.projects dd {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted);
 }
 
-.coll-next .entries > li:last-child { border-bottom-color: var(--hairline); }
-.coll-next .entry-title { font-size: 1.28rem; }
-.coll-next .entry-when { color: var(--oxblood); border-right-color: var(--hairline); }
+.projects dt a { color: var(--ink); border-bottom-color: var(--hairline); }
+.projects dt a:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
+
+@media (max-width: 30rem) {
+    .projects dl { grid-template-columns: 1fr; gap: 0.1rem; }
+    .projects dd { margin-bottom: 0.55rem; }
+}
+
+/* Speaking next is the most actionable block on the page, so its dates carry
+   the ink rather than sitting in the same grey as a 2018 archive row. */
+.coll-next .entry-meta { color: var(--ink-2); }
+.coll-next .entry-title { font-size: 1.22rem; }
 
 /* Demos — interactive things, so they get room rather than a line. */
 .cards {
@@ -471,19 +436,8 @@ footer a:hover { color: var(--oxblood); border-bottom-color: var(--oxblood); }
     .portrait { width: 64px; height: 64px; }
     .lead { font-size: 1.15rem; }
 
-    /* the date rail cannot survive a phone; stack it above the title */
-    .entries > li { grid-template-columns: 1fr; gap: 0; }
-    .entry-when {
-        text-align: left;
-        border-right: 0;
-        padding-right: 0;
-        margin: 0 0 0.15rem;
-        font-size: 0.76rem;
-    }
-    .coll-next .entries > li { padding-left: 0.8rem; padding-right: 0.8rem; }
     .label.year { position: static; }
-    .yearnav { gap: 0.3rem; }
-    .yearnav a { padding: 0.25rem 0.45rem; font-size: 0.76rem; }
+    .yearnav { gap: 0 0.6rem; }
 }
 
 /* ---------- Ink sheet (dark) ---------- */
