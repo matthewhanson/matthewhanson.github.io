@@ -130,7 +130,7 @@ const regions = {
   recent: preview(delivered, (t) => talkEntry(t, { showYear: true }),
     { all: 'talks', href: '/talks/' }),
   writing: preview(posts, postEntry,
-    { all: 'writing', href: '/talks/#writing' }),
+    { all: 'writing', href: '/writing/' }),
   podcasts: preview(podcasts, (t) => talkEntry(t, { showYear: true }),
     { all: 'podcasts', href: '/talks/#podcasts' }),
   demos: demos.length
