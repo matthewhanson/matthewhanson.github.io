@@ -156,12 +156,14 @@ const regions = {
   'archive-panels': panels.length
     ? list(panels.map((t) => talkEntry(t, { showYear: true })))
     : `\t\t<p class="empty">None yet.</p>`,
-  'archive-writing': list(posts.map(postEntry)),
+  // writing has its own page now: it is a different medium from speaking,
+  // and the talks page was carrying four collections under a title naming two.
+  'writing-all': list(posts.map(postEntry)),
+  'writing-totals': `${posts.length} posts, 2018 onward`,
   'archive-totals': [
     `${deliveredCount} talks, workshops, and invited sessions`,
     `${podcasts.length} podcast${podcasts.length === 1 ? '' : 's'}`,
     `${panels.length} panel${panels.length === 1 ? '' : 's'}`,
-    `${posts.length} posts`,
   ].join(' &middot; '),
 }
 
@@ -169,7 +171,7 @@ const regions = {
 
 let changed = 0
 let orphans = 0
-for (const file of ['index.html', 'talks/index.html']) {
+for (const file of ['index.html', 'talks/index.html', 'writing/index.html']) {
   const path = join(ROOT, file)
   const before = readFileSync(path, 'utf8')
 

@@ -5,8 +5,9 @@ stylesheet; a small Node script renders the lists from data files. No dependenci
 the generated html is committed and GitHub Pages serves it as-is.
 
 ```
-index.html            home — bio, speaking, writing, open source
-talks/index.html      the complete record: talks, panels, writing
+index.html            home — bio, then the newest few of each collection
+talks/index.html      every talk, plus podcasts and panels
+writing/index.html    every post, all hosted elsewhere
 css/main.css          letterpress palette + type, shared by both pages
 data/talks.json       ← every talk, panel, and podcast (split by `kind`)
 data/posts.json       ← the outbound writing
@@ -23,6 +24,10 @@ images/
 
 Four collections — **talks**, **writing**, **podcasts**, and (eventually) **demo apps** — where
 this site is the index and hosts almost nothing.
+
+**Speaking and writing are separate pages**, because they are separate media: `/talks/` carries
+talks, podcasts and panels, `/writing/` carries posts. The talks page used to hold all four under a
+title that named two.
 
 `kind` in `data/talks.json` splits speaking into `talk`, `podcast`, and `panel`; the renderer gives
 each its own section rather than lumping them together. Markers encode where a thing lives: an
