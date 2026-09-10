@@ -861,5 +861,15 @@
         "url": "https://mapscaping.podbean.com/e/vibe-coding-and-the-fragmentation-of-open-source/"
       }
     ]
+  },
+  {
+    "title": "Keynote",
+    "when": "9–12 Nov 2026",
+    "sort": "2026-11-09",
+    "venue": "Advancing Earth Observation Forum",
+    "location": "Hobart, Tasmania",
+    "kind": "talk",
+    "status": "upcoming",
+    "note": "Title to be confirmed"
   }
 ]
