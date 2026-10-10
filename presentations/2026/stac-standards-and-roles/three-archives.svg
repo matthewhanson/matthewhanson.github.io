@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="The same question — imagery over one area with less than twenty percent cloud — asked of three archives in three different request vocabularies, against one STAC search that works on any of them.">
+  <title>The same question, three archives</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .card  { fill: #f5efe1; stroke: #1b2233; stroke-width: 1.4; }
+      .good  { fill: #f5efe1; stroke: #8c2f2f; stroke-width: 2; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.1; opacity: .4; }
+      .flow  { fill: none; stroke: #8c2f2f; stroke-width: 1.8; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="a-arw" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c2f2f"/>
+    </marker>
+  </defs>
+
+  <text class="mono brass" x="34" y="42" font-size="14" letter-spacing="1.5">&#8220;LESS THAN 20% CLOUD, OVER HERE, THIS SUMMER&#8221;</text>
+
+  <!-- ══ archive A ══ -->
+  <rect class="card" x="34" y="64" width="418" height="98" rx="3"/>
+  <text class="mono muted" x="52" y="88"  font-size="12">ARCHIVE A</text>
+  <text class="mono ink"   x="52" y="112" font-size="14">GET /search?bbox=140,36,141,37</text>
+  <text class="mono ink"   x="52" y="132" font-size="14">        &amp;<tspan class="red">cloud_max=20</tspan>&amp;from=2026-06-01</text>
+  <text class="sans muted" x="52" y="152" font-size="13">20 means per cent</text>
+
+  <!-- ══ archive B ══ -->
+  <rect class="card" x="34" y="176" width="418" height="98" rx="3"/>
+  <text class="mono muted" x="52" y="200" font-size="12">ARCHIVE B</text>
+  <text class="mono ink"   x="52" y="224" font-size="14">POST { "aoi": "POLYGON((...))",</text>
+  <text class="mono ink"   x="52" y="244" font-size="14">        <tspan class="red">"cloudcover": 0.2</tspan> }</text>
+  <text class="sans muted" x="52" y="264" font-size="13">0.2 means exactly the same thing</text>
+
+  <!-- ══ archive C ══ -->
+  <rect class="card" x="34" y="288" width="418" height="98" rx="3"/>
+  <text class="mono muted" x="52" y="312" font-size="12">ARCHIVE C</text>
+  <text class="mono ink"   x="52" y="336" font-size="14">GET /granules?ll=36,140&amp;ur=37,141</text>
+  <text class="mono ink"   x="52" y="356" font-size="14">        &amp;<tspan class="red">maxCloud=20%</tspan></text>
+  <text class="sans muted" x="52" y="376" font-size="13">and the geometry moved again</text>
+
+  <!-- ══ the arrow ══ -->
+  <path class="flow" marker-end="url(#a-arw)" d="M 466 225 L 546 225"/>
+
+  <!-- ══ one STAC request ══ -->
+  <text class="mono brass" x="562" y="42" font-size="14" letter-spacing="1.5">ONE REQUEST</text>
+  <rect class="good" x="562" y="64" width="454" height="222" rx="3"/>
+  <text class="mono ink" x="582" y="96"  font-size="15">POST /search</text>
+  <line class="hair" x1="582" y1="110" x2="996" y2="110"/>
+  <text class="mono ink" x="582" y="140" font-size="15">{ "bbox": [140, 36, 141, 37],</text>
+  <text class="mono ink" x="600" y="166" font-size="15">"datetime": "2026-06-01/</text>
+  <text class="mono ink" x="712" y="192" font-size="15">2026-08-31",</text>
+  <text class="mono ink" x="600" y="218" font-size="15">"query": { "eo:cloud_cover":</text>
+  <text class="mono ink" x="712" y="244" font-size="15">{ "lt": 20 } } }</text>
+  <text class="sans red" x="582" y="272" font-size="14">the same body at any of them &#8212; change the hostname</text>
+
+  <line class="hair" x1="562" y1="316" x2="1016" y2="316"/>
+  <text class="sans ink"   x="562" y="348" font-size="17">Every one is JSON.</text>
+  <text class="sans ink"   x="562" y="374" font-size="17">Every one is RESTful.</text>
+  <text class="sans red"   x="562" y="400" font-size="17" font-weight="700">Every one is different.</text>
+</svg>

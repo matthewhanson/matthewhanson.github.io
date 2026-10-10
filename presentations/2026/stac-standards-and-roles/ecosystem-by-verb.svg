@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="The STAC tool ecosystem grouped by what each tool does to a catalog: build it, serve it, read it, with check it and chain it beneath.">
+  <title>The ecosystem, one picture</title>
+
+  <!-- Grouped by verb, not by language — the grouping the Plate IX note asks for.
+       One tool per line: a 298-wide box holds about 22 monospace characters at 19px,
+       so joined lists overflow. Palette reads on parchment and on cream. -->
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .box   { fill: none; stroke: #1b2233; stroke-width: 1.6; }
+      .box2  { fill: none; stroke: #1b2233; stroke-width: 1.3; opacity: .7; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.1; opacity: .4; }
+      .flow  { fill: none; stroke: #8c2f2f; stroke-width: 1.8; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#8c2f2f"/>
+    </marker>
+  </defs>
+
+  <!-- ══ the three verbs a catalog passes through ══ -->
+  <g>
+    <rect class="box" x="30" y="34" width="298" height="252" rx="3"/>
+    <text class="disp ink" x="52" y="68" font-size="26" font-weight="700">Build it</text>
+    <line class="hair" x1="52" y1="80" x2="306" y2="80"/>
+    <text class="mono ink"   x="52" y="108" font-size="19">pystac</text>
+    <text class="mono muted" x="52" y="130" font-size="15">+ 22 pystac-ext-*</text>
+    <text class="mono ink"   x="52" y="160" font-size="19">raster-footprint</text>
+    <text class="mono ink"   x="52" y="187" font-size="19">rustac</text>
+    <text class="sans muted" x="52" y="215" font-size="16">Python, and one in Rust</text>
+  </g>
+
+  <g>
+    <rect class="box" x="376" y="34" width="298" height="252" rx="3"/>
+    <text class="disp ink" x="398" y="68" font-size="26" font-weight="700">Serve it</text>
+    <line class="hair" x1="398" y1="80" x2="652" y2="80"/>
+    <text class="mono ink"   x="398" y="108" font-size="19">stac-fastapi</text>
+    <text class="mono muted" x="398" y="130" font-size="15">+ pgstac / opensearch</text>
+    <text class="mono ink"   x="398" y="160" font-size="19">stac-server</text>
+    <text class="mono ink"   x="398" y="187" font-size="19">eoAPI</text>
+    <text class="sans red"   x="398" y="222" font-size="17" font-style="italic">…or maybe nothing</text>
+    <text class="sans red"   x="398" y="242" font-size="17" font-style="italic">at all</text>
+  </g>
+
+  <g>
+    <rect class="box" x="722" y="34" width="298" height="252" rx="3"/>
+    <text class="disp ink" x="744" y="68" font-size="26" font-weight="700">Read it</text>
+    <line class="hair" x1="744" y1="80" x2="998" y2="80"/>
+    <text class="mono ink" x="744" y="108" font-size="19">pystac-client</text>
+    <text class="mono ink" x="744" y="135" font-size="19">odc-stac</text>
+    <text class="mono ink" x="744" y="162" font-size="19">stac-geoparquet</text>
+    <text class="mono ink" x="744" y="189" font-size="19">stac-duckdb</text>
+    <text class="mono ink" x="744" y="216" font-size="19">stac-js / ol-stac</text>
+    <text class="mono ink" x="744" y="243" font-size="19">STAC Browser</text>
+  </g>
+
+  <!-- the catalog moving between them -->
+  <path class="flow" d="M 334 160 L 368 160" marker-end="url(#ar)"/>
+  <path class="flow" d="M 680 160 L 714 160" marker-end="url(#ar)"/>
+
+  <!-- ══ the two that wrap around all of it ══ -->
+  <rect class="box2" x="30" y="300" width="482" height="92" rx="3"/>
+  <text class="disp ink" x="52" y="330" font-size="22" font-weight="700">Check it</text>
+  <text class="mono ink" x="52" y="356" font-size="18">stac-check &#183; stac-validator</text>
+  <text class="mono ink" x="52" y="378" font-size="18">stac-api-validator</text>
+
+  <rect class="box2" x="538" y="300" width="482" height="92" rx="3"/>
+  <text class="disp ink" x="560" y="330" font-size="22" font-weight="700">Chain it</text>
+  <text class="mono ink" x="560" y="356" font-size="18">stac-task &#8212; &#8220;STAC in, STAC out&#8221;</text>
+  <text class="mono ink" x="560" y="378" font-size="18">stac-asset</text>
+
+  <!-- ══ the caveat that makes the picture honest ══ -->
+  <line class="hair" x1="30" y1="410" x2="1020" y2="410"/>
+  <text class="sans muted" x="30" y="434" font-size="16">Not all of it lives in <tspan class="mono">stac-utils</tspan> — e.g. <tspan class="mono">odc-stac</tspan> &#8594; opendatacube &#183; <tspan class="mono">stac-js</tspan> &#8594; moregeo-it &#183; <tspan class="mono">stac-validator</tspan> &#8594; StacLabs</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="A STAC search returning Items, which odc-stac loads into an xarray datacube with time, band, y and x dimensions.">
+  <title>From one search to one cube</title>
+
+  <!-- House style matches item-exploded.svg / ecosystem-by-verb.svg: no background
+       fill so the paper shows through, system fonts only, thurston palette.
+       .card carries an opaque fill because the stacks have to occlude; it is the
+       one theme-specific value here (#f5efe1 = thurston paper). -->
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .box   { fill: none; stroke: #1b2233; stroke-width: 1.6; }
+      .card  { fill: #f5efe1; stroke: #1b2233; stroke-width: 1.4; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.1; opacity: .45; }
+      .grid  { fill: none; stroke: #1b2233; stroke-width: .7; opacity: .3; }
+      .flow  { fill: none; stroke: #8c2f2f; stroke-width: 1.6; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c2f2f"/>
+    </marker>
+  </defs>
+
+  <!-- ══ 1 · the search ══ -->
+  <text class="mono brass" x="32" y="86" font-size="14" letter-spacing="1.5">1 · SEARCH</text>
+  <rect class="box" x="32" y="102" width="252" height="196" rx="3"/>
+  <text class="mono ink"   x="52" y="136" font-size="17">POST /search</text>
+  <line class="hair" x1="52" y1="150" x2="264" y2="150"/>
+  <text class="mono muted" x="52" y="177" font-size="14">bbox: [140, 36, 141, 37]</text>
+  <text class="mono muted" x="52" y="201" font-size="14">datetime: 2026-06-01/</text>
+  <text class="mono muted" x="52" y="221" font-size="14">          2026-08-31</text>
+  <text class="mono muted" x="52" y="248" font-size="14">eo:cloud_cover &lt; 20</text>
+  <text class="sans ink"   x="52" y="279" font-size="14">one query, any STAC API</text>
+
+  <!-- ══ 2 · the Items ══ -->
+  <text class="mono brass" x="348" y="86" font-size="14" letter-spacing="1.5">2 · ITEMS</text>
+
+  <rect class="card" x="412" y="128" width="152" height="86" rx="3"/>
+  <text class="mono muted" x="428" y="152" font-size="13">2026-08-24</text>
+  <rect class="card" x="396" y="154" width="152" height="86" rx="3"/>
+  <text class="mono muted" x="412" y="178" font-size="13">2026-07-30</text>
+  <rect class="card" x="380" y="180" width="152" height="86" rx="3"/>
+  <text class="mono muted" x="396" y="204" font-size="13">2026-07-05</text>
+  <rect class="card" x="364" y="206" width="152" height="86" rx="3"/>
+  <text class="mono muted" x="380" y="230" font-size="13">2026-06-18</text>
+
+  <rect class="card" x="348" y="232" width="152" height="86" rx="3"/>
+  <text class="mono ink"   x="364" y="256" font-size="13">2026-06-03</text>
+  <line class="hair" x1="364" y1="266" x2="484" y2="266"/>
+  <text class="mono red"   x="364" y="286" font-size="12">red.tif</text>
+  <text class="mono red"   x="364" y="304" font-size="12">nir.tif</text>
+
+  <text class="sans muted" x="348" y="348" font-size="14">one Item per scene, each</text>
+  <text class="sans muted" x="348" y="368" font-size="14">linking its COG assets</text>
+
+  <!-- ══ 3 · the cube ══ -->
+  <text class="mono brass" x="700" y="86" font-size="14" letter-spacing="1.5">3 · DATACUBE</text>
+
+  <rect class="card" x="784" y="120" width="176" height="126"/>
+  <rect class="card" x="763" y="147" width="176" height="126"/>
+  <rect class="card" x="742" y="174" width="176" height="126"/>
+  <rect class="card" x="721" y="201" width="176" height="126"/>
+  <rect class="card" x="700" y="228" width="176" height="126"/>
+
+  <!-- pixels on the front face -->
+  <g class="grid">
+    <line x1="744" y1="228" x2="744" y2="354"/><line x1="788" y1="228" x2="788" y2="354"/>
+    <line x1="832" y1="228" x2="832" y2="354"/>
+    <line x1="700" y1="270" x2="876" y2="270"/><line x1="700" y1="312" x2="876" y2="312"/>
+  </g>
+
+  <!-- the time axis, running back along the stack -->
+  <path class="flow" marker-end="url(#arw)" d="M 884 236 L 968 128"/>
+  <text class="mono red" x="944" y="176" font-size="14" transform="rotate(-52 944 176)">time</text>
+
+  <text class="mono muted" x="682" y="296" font-size="13" transform="rotate(-90 682 296)">y</text>
+  <text class="mono muted" x="784" y="374" font-size="13">x</text>
+
+  <text class="sans muted" x="700" y="404" font-size="14">one variable per band, each (time, y, x) — a plan, not yet pixels</text>
+
+  <!-- ══ flow between the panels ══ -->
+  <path class="flow" marker-end="url(#arw)" d="M 292 200 L 340 200"/>
+  <text class="mono muted" x="288" y="186" font-size="12">STAC API</text>
+
+  <path class="flow" marker-end="url(#arw)" d="M 578 232 L 692 232"/>
+  <text class="mono ink" x="580" y="220" font-size="13">odc.stac.load()</text>
+  <text class="sans muted" x="580" y="256" font-size="13">builds a dask graph</text>
+</svg>

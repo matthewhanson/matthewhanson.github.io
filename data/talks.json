@@ -1,22 +1,34 @@
 [
   {
     "title": "Into the STACLands",
-    "when": "6–9 Oct 2026",
-    "sort": "2026-10-06",
+    "when": "8 Oct",
+    "sort": "2026-10-08",
     "venue": "Cloud-Native Geospatial Forum",
     "location": "Snowbird, UT",
     "kind": "talk",
-    "status": "upcoming",
+    "status": "delivered",
     "subtitle": "A choose-your-own-adventure tour of STAC"
   },
   {
-    "title": "From Catalog to Content",
-    "when": "6–9 Oct 2026",
-    "sort": "2026-10-06",
+    "title": "STAC for Embeddings",
+    "when": "8 Oct",
+    "sort": "2026-10-08",
     "venue": "Cloud-Native Geospatial Forum",
     "location": "Snowbird, UT",
     "kind": "talk",
-    "status": "upcoming"
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2026/stac-for-embeddings/"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2026/stac-for-embeddings/stac-for-embeddings.pdf"
+      }
+    ],
+    "subtitle": "Combining metadata search with semantic search",
+    "note": "Listed in the program as From Catalog to Content"
   },
   {
     "title": "Into the STACLands",
@@ -65,7 +77,7 @@
     "subtitle": "From scenes to coverage"
   },
   {
-    "title": "State of STAC",
+    "title": "Into the STACLands",
     "when": "3 Sep",
     "sort": "2026-09-03",
     "venue": "FOSS4G 2026",
@@ -78,7 +90,8 @@
         "url": "https://talks.osgeo.org/foss4g-2026/talk/DWERNM/"
       }
     ],
-    "subtitle": "From specification to infrastructure"
+    "subtitle": "A choose-your-own-adventure tour of STAC",
+    "note": "Listed in the program as State of STAC"
   },
   {
     "title": "Open Geo Embeddings",
@@ -119,7 +132,17 @@
     "venue": "JAXA Sprint",
     "location": "Tsukuba",
     "kind": "talk",
-    "status": "delivered"
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2026/stac-and-open-science/"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2026/stac-and-open-science/stac-and-open-science.pdf"
+      }
+    ]
   },
   {
     "title": "STAC Standards & Roles",
@@ -128,7 +151,17 @@
     "venue": "JAXA Sprint",
     "location": "Tsukuba",
     "kind": "talk",
-    "status": "delivered"
+    "status": "delivered",
+    "links": [
+      {
+        "label": "slides",
+        "url": "/presentations/2026/stac-standards-and-roles/"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2026/stac-standards-and-roles/stac-standards-and-roles.pdf"
+      }
+    ]
   },
   {
     "title": "Semantic Search and Change Detection",

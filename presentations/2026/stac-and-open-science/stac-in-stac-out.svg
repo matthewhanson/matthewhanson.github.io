@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="A processing chain where each step takes STAC Items as input and emits STAC Items as output, with derived_from links running back from each generation to the one before it.">
+  <title>Metadata in, metadata out</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .card  { fill: #f5efe1; stroke: #1b2233; stroke-width: 1.5; }
+      .proc  { fill: #f5efe1; stroke: #8c2f2f; stroke-width: 1.9; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.1; opacity: .45; }
+      .flow  { fill: none; stroke: #8c2f2f; stroke-width: 1.7; }
+      .lead  { fill: none; stroke: #8c2f2f; stroke-width: 1.4; stroke-dasharray: 5 4; opacity: .8; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="w-arw" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c2f2f"/>
+    </marker>
+  </defs>
+
+  <text class="mono brass" x="40" y="118" font-size="14" letter-spacing="1.5">METADATA IN, METADATA OUT</text>
+  <line class="hair" x1="40" y1="132" x2="1000" y2="132"/>
+
+  <!-- ══ L1 items ══ -->
+  <rect class="card" x="52" y="162" width="120" height="76" rx="3"/>
+  <rect class="card" x="46" y="168" width="120" height="76" rx="3"/>
+  <rect class="card" x="40" y="174" width="120" height="76" rx="3"/>
+  <text class="mono ink"   x="56" y="204" font-size="13">Items</text>
+  <line class="hair" x1="56" y1="214" x2="144" y2="214"/>
+  <text class="mono muted" x="56" y="234" font-size="11">L1 · source</text>
+
+  <!-- ══ step 1 ══ -->
+  <rect class="proc" x="210" y="180" width="106" height="62" rx="4"/>
+  <text class="disp ink" x="228" y="217" font-size="17">Process</text>
+
+  <!-- ══ L2 items ══ -->
+  <rect class="card" x="376" y="162" width="120" height="76" rx="3"/>
+  <rect class="card" x="370" y="168" width="120" height="76" rx="3"/>
+  <rect class="card" x="364" y="174" width="120" height="76" rx="3"/>
+  <text class="mono ink"   x="380" y="204" font-size="13">Items</text>
+  <line class="hair" x1="380" y1="214" x2="468" y2="214"/>
+  <text class="mono muted" x="380" y="234" font-size="11">L2 · derived</text>
+
+  <!-- ══ step 2 ══ -->
+  <rect class="proc" x="534" y="180" width="106" height="62" rx="4"/>
+  <text class="disp ink" x="552" y="217" font-size="17">Process</text>
+
+  <!-- ══ L3 items ══ -->
+  <rect class="card" x="700" y="162" width="120" height="76" rx="3"/>
+  <rect class="card" x="694" y="168" width="120" height="76" rx="3"/>
+  <rect class="card" x="688" y="174" width="120" height="76" rx="3"/>
+  <text class="mono ink"   x="704" y="204" font-size="13">Items</text>
+  <line class="hair" x1="704" y1="214" x2="792" y2="214"/>
+  <text class="mono muted" x="704" y="234" font-size="11">L3 · derived</text>
+
+  <!-- ══ the chain ══ -->
+  <path class="flow" marker-end="url(#w-arw)" d="M 164 211 L 206 211"/>
+  <text class="mono red" x="158" y="154" font-size="12">STAC in</text>
+
+  <path class="flow" marker-end="url(#w-arw)" d="M 320 211 L 360 211"/>
+  <text class="mono red" x="310" y="154" font-size="12">STAC out</text>
+
+  <path class="flow" marker-end="url(#w-arw)" d="M 488 211 L 530 211"/>
+  <path class="flow" marker-end="url(#w-arw)" d="M 644 211 L 684 211"/>
+
+  <!-- ══ downstream ══ -->
+  <path class="flow" marker-end="url(#w-arw)" d="M 812 211 L 856 211"/>
+  <text class="sans ink"   x="864" y="198" font-size="14">the search,</text>
+  <text class="sans ink"   x="864" y="218" font-size="14">the cube, a</text>
+  <text class="sans ink"   x="864" y="238" font-size="14">notebook</text>
+
+  <!-- ══ lineage running back ══ -->
+  <path class="lead" marker-end="url(#w-arw)" d="M 424 258 C 424 316, 100 316, 100 260"/>
+  <path class="lead" marker-end="url(#w-arw)" d="M 748 258 C 748 316, 424 316, 424 260"/>
+  <text class="mono red" x="228" y="336" font-size="13">derived_from</text>
+  <text class="mono red" x="552" y="336" font-size="13">derived_from</text>
+
+  <line class="hair" x1="40" y1="366" x2="1000" y2="366"/>
+  <text class="sans ink"   x="40" y="398" font-size="15">The file paths live inside the Items. The interface between steps is the metadata —</text>
+  <text class="sans muted" x="40" y="422" font-size="13">so every step writes a catalog, and the chain records its own lineage as it goes.</text>
+</svg>

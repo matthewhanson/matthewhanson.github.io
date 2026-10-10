@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="A cloud-optimized GeoTIFF divided into 1024 by 1024 internal tiles, with a small area of interest sitting inside one of them; an HTTP range request fetches only that tile, repeated across every scene in a time series.">
+  <title>The window read</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .card  { fill: #f5efe1; stroke: #1b2233; stroke-width: 1.4; }
+      .grid  { fill: none; stroke: #1b2233; stroke-width: .7; opacity: .28; }
+      .hit   { fill: #8c2f2f; opacity: .13; }
+      .aoi   { fill: none; stroke: #8c2f2f; stroke-width: 2.2; }
+      .flow  { fill: none; stroke: #8c2f2f; stroke-width: 1.6; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+    <marker id="arw2" viewBox="0 0 10 10" refX="9" refY="5"
+            markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8c2f2f"/>
+    </marker>
+  </defs>
+
+  <!-- ══ one COG, tiled 1024 inside ══ -->
+  <text class="mono brass" x="48" y="82" font-size="14" letter-spacing="1.5">ONE BAND, ONE SCENE</text>
+
+  <rect class="card" x="48" y="96" width="300" height="300"/>
+  <!-- 10,980 / 1024 ≈ 10.7 blocks across; drawn as 10 for legibility -->
+  <g class="grid">
+    <line x1="78"  y1="96" x2="78"  y2="396"/><line x1="108" y1="96" x2="108" y2="396"/>
+    <line x1="138" y1="96" x2="138" y2="396"/><line x1="168" y1="96" x2="168" y2="396"/>
+    <line x1="198" y1="96" x2="198" y2="396"/><line x1="228" y1="96" x2="228" y2="396"/>
+    <line x1="258" y1="96" x2="258" y2="396"/><line x1="288" y1="96" x2="288" y2="396"/>
+    <line x1="318" y1="96" x2="318" y2="396"/>
+    <line x1="48" y1="126" x2="348" y2="126"/><line x1="48" y1="156" x2="348" y2="156"/>
+    <line x1="48" y1="186" x2="348" y2="186"/><line x1="48" y1="216" x2="348" y2="216"/>
+    <line x1="48" y1="246" x2="348" y2="246"/><line x1="48" y1="276" x2="348" y2="276"/>
+    <line x1="48" y1="306" x2="348" y2="306"/><line x1="48" y1="336" x2="348" y2="336"/>
+    <line x1="48" y1="366" x2="348" y2="366"/>
+  </g>
+
+  <!-- the single internal tile the window falls inside -->
+  <rect class="hit" x="168" y="216" width="30" height="30"/>
+  <!-- the window itself, comfortably inside it -->
+  <rect class="aoi" x="176" y="224" width="14" height="14"/>
+
+  <text class="mono muted" x="48" y="420" font-size="13">10,980 × 10,980 px · 241 MB uncompressed · internal tiles of 1024²</text>
+  <text class="mono red"   x="206" y="222" font-size="13">your area</text>
+
+  <!-- ══ the range request ══ -->
+  <path class="flow" marker-end="url(#arw2)" d="M 366 246 L 486 246"/>
+  <text class="mono ink"   x="368" y="234" font-size="14">HTTP range request</text>
+  <text class="sans muted" x="368" y="270" font-size="13">only the tiles the</text>
+  <text class="sans muted" x="368" y="288" font-size="13">window falls inside</text>
+
+  <text class="sans ink" x="368" y="336" font-size="15">1 tile ≈ 2 MB</text>
+  <text class="sans muted" x="368" y="356" font-size="13">under 1% of the band</text>
+
+  <!-- ══ repeated across the time series ══ -->
+  <text class="mono brass" x="650" y="82" font-size="14" letter-spacing="1.5">EVERY SCENE, SAME WINDOW</text>
+
+  <g>
+    <rect class="card" x="738" y="114" width="130" height="130"/>
+    <rect class="hit"  x="790" y="166" width="26" height="26"/>
+    <rect class="aoi"  x="797" y="173" width="12" height="12"/>
+  </g>
+  <g>
+    <rect class="card" x="716" y="138" width="130" height="130"/>
+    <rect class="hit"  x="768" y="190" width="26" height="26"/>
+    <rect class="aoi"  x="775" y="197" width="12" height="12"/>
+  </g>
+  <g>
+    <rect class="card" x="694" y="162" width="130" height="130"/>
+    <rect class="hit"  x="746" y="214" width="26" height="26"/>
+    <rect class="aoi"  x="753" y="221" width="12" height="12"/>
+  </g>
+  <g>
+    <rect class="card" x="672" y="186" width="130" height="130"/>
+    <rect class="hit"  x="724" y="238" width="26" height="26"/>
+    <rect class="aoi"  x="731" y="245" width="12" height="12"/>
+  </g>
+  <g>
+    <rect class="card" x="650" y="210" width="130" height="130"/>
+    <g class="grid">
+      <line x1="676" y1="210" x2="676" y2="340"/><line x1="702" y1="210" x2="702" y2="340"/>
+      <line x1="728" y1="210" x2="728" y2="340"/><line x1="754" y1="210" x2="754" y2="340"/>
+      <line x1="650" y1="236" x2="780" y2="236"/><line x1="650" y1="262" x2="780" y2="262"/>
+      <line x1="650" y1="288" x2="780" y2="288"/><line x1="650" y1="314" x2="780" y2="314"/>
+    </g>
+    <rect class="hit" x="702" y="262" width="26" height="26"/>
+    <rect class="aoi" x="709" y="269" width="12" height="12"/>
+  </g>
+
+  <path class="flow" marker-end="url(#arw2)" d="M 876 218 L 960 122"/>
+  <text class="mono red" x="936" y="166" font-size="14" transform="rotate(-49 936 166)">time</text>
+
+  <text class="sans muted" x="650" y="374" font-size="14">one window read per scene —</text>
+  <text class="sans muted" x="650" y="394" font-size="14">the time series costs what one scene used to</text>
+</svg>

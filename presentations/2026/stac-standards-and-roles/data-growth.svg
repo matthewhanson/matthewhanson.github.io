@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="NASA's Earth science archive grew from 59 petabytes in 2021 to 72 petabytes in 2022 and is projected past 500 petabytes by 2030; Copernicus holds over 90 petabytes and more than 100 million individual products.">
+  <title>The archives outgrew browsing</title>
+
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .bar   { fill: #1b2233; }
+      .barp  { fill: #8c2f2f; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.2; opacity: .45; }
+      .rule  { fill: none; stroke: #1b2233; stroke-width: 1.4; opacity: .55; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- ══ NASA EOSDIS archive growth ══ -->
+  <text class="mono brass" x="40" y="44" font-size="14" letter-spacing="1.5">NASA EARTH SCIENCE ARCHIVE</text>
+
+  <!-- 500 PB maps to 300px; baseline y=392 -->
+  <rect class="bar"  x="60"  y="357" width="86" height="35"/>
+  <text class="sans ink"   x="60"  y="345" font-size="17" font-weight="700">59 PB</text>
+  <text class="mono muted" x="72"  y="414" font-size="14">2021</text>
+
+  <rect class="bar"  x="176" y="349" width="86" height="43"/>
+  <text class="sans ink"   x="176" y="337" font-size="17" font-weight="700">72 PB</text>
+  <text class="mono muted" x="188" y="414" font-size="14">2022</text>
+
+  <rect class="barp" x="292" y="92"  width="86" height="300"/>
+  <text class="sans red"   x="292" y="80"  font-size="17" font-weight="700">500+ PB</text>
+  <text class="mono muted" x="296" y="414" font-size="14">2030</text>
+  <text class="mono muted" x="288" y="432" font-size="12">projected</text>
+
+  <line class="rule" x1="46" y1="392" x2="416" y2="392"/>
+
+  <text class="sans muted" x="60" y="452" font-size="13"></text>
+
+  <!-- ══ Copernicus ══ -->
+  <line class="hair" x1="470" y1="60" x2="470" y2="400"/>
+
+  <text class="mono brass" x="516" y="44" font-size="14" letter-spacing="1.5">COPERNICUS, EARLY 2026</text>
+
+  <text class="disp ink"   x="516" y="126" font-size="52" font-weight="700">90 PB</text>
+  <text class="sans muted" x="516" y="152" font-size="15">archived, and still growing</text>
+
+  <text class="disp red"   x="516" y="238" font-size="52" font-weight="700">100 million</text>
+  <text class="sans muted" x="516" y="264" font-size="15">individual products online</text>
+
+  <line class="hair" x1="516" y1="300" x2="1010" y2="300"/>
+  <text class="sans ink" x="516" y="336" font-size="19">Nobody browses a hundred million products.</text>
+  <text class="sans ink" x="516" y="362" font-size="19">You either query it, or you never see it.</text>
+
+  <text class="mono muted" x="516" y="414" font-size="12">NASA ESDIS · Copernicus Data Space Ecosystem annual report</text>
+</svg>

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 450" role="img"
+     aria-label="A STAC Item document exploded into its parts: the always-required members, geometry and bbox, properties, links, and assets.">
+  <title>The document, exploded</title>
+
+  <!-- Palette reads on both packard parchment and thurston cream; no background
+       fill, so the paper shows through. System fonts only — nothing to fetch.
+       Line lengths are budgeted: ~65 chars at sans 19, ~56 at mono 19. -->
+  <defs>
+    <style>
+      .ink   { fill: #1b2233; }
+      .muted { fill: #8a8272; }
+      .red   { fill: #8c2f2f; }
+      .brass { fill: #b8894b; }
+      .box   { fill: none; stroke: #1b2233; stroke-width: 1.6; }
+      .hair  { fill: none; stroke: #1b2233; stroke-width: 1.1; opacity: .45; }
+      .lead  { fill: none; stroke: #8c2f2f; stroke-width: 1.4; stroke-dasharray: 5 4; opacity: .75; }
+      .disp  { font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif; }
+      .sans  { font-family: 'Helvetica Neue', Arial, sans-serif; }
+      .mono  { font-family: 'SF Mono', Menlo, Consolas, monospace; }
+    </style>
+  </defs>
+
+  <!-- ══ the Item document ══ -->
+  <rect class="box" x="36" y="48" width="228" height="356" rx="3"/>
+  <path class="hair" d="M 242 48 L 242 70 L 264 70"/>
+
+  <text class="disp ink"  x="58" y="82"  font-size="26" font-weight="700">STAC Item</text>
+  <text class="mono muted" x="58" y="102" font-size="15">a single scene</text>
+  <line class="hair" x1="58" y1="114" x2="242" y2="114"/>
+
+  <!-- the three that are always required, bracketed in brass -->
+  <path d="M 50 126 L 44 126 L 44 206 L 50 206" fill="none" stroke="#b8894b" stroke-width="1.2" opacity=".9"/>
+  <text class="mono ink"   x="60" y="142" font-size="21">type</text>
+  <text class="mono ink"   x="60" y="170" font-size="21">stac_version</text>
+  <text class="mono ink"   x="60" y="198" font-size="21">id</text>
+  <text class="sans brass" x="60" y="220" font-size="14" letter-spacing="1.1">ALWAYS REQUIRED</text>
+
+  <line class="hair" x1="58" y1="236" x2="242" y2="236"/>
+
+  <text class="mono ink" x="60" y="264" font-size="21">geometry</text>
+  <text class="mono ink" x="60" y="292" font-size="21">bbox</text>
+  <text class="mono ink" x="60" y="320" font-size="21">properties</text>
+  <text class="mono ink" x="60" y="348" font-size="21">links</text>
+  <text class="mono ink" x="60" y="376" font-size="21">assets</text>
+
+  <!-- ══ leaders ══ -->
+  <path class="lead" d="M 264 278 C 296 278 300 91  330 91"/>
+  <path class="lead" d="M 264 320 C 298 320 302 189 330 189"/>
+  <path class="lead" d="M 264 348 C 300 348 304 287 330 287"/>
+  <path class="lead" d="M 264 376 C 302 376 306 385 330 385"/>
+
+  <!-- ══ A · geometry + bbox ══ -->
+  <rect class="box" x="330" y="48" width="686" height="86" rx="3"/>
+  <text class="mono red" x="352" y="80" font-size="22" font-weight="700">geometry + bbox</text>
+  <text class="sans ink" x="352" y="106" font-size="19">GeoJSON footprint. <tspan class="mono">bbox</tspan> is <tspan font-style="italic">conditional</tspan> &#8212;</text>
+  <text class="sans ink" x="352" y="126" font-size="19">required when geometry is non-null, <tspan font-weight="700">prohibited</tspan> when null.</text>
+
+  <!-- ══ B · properties ══ -->
+  <rect class="box" x="330" y="146" width="686" height="86" rx="3"/>
+  <text class="mono red" x="352" y="178" font-size="22" font-weight="700">properties</text>
+  <text class="sans ink" x="352" y="204" font-size="19"><tspan class="mono">datetime</tspan> lives in here &#8212; <tspan font-weight="700">not</tspan> at the top level.</text>
+  <text class="sans ink" x="352" y="224" font-size="19">Everything else that describes the scene.</text>
+
+  <!-- ══ C · links ══ -->
+  <rect class="box" x="330" y="244" width="686" height="86" rx="3"/>
+  <text class="mono red" x="352" y="276" font-size="22" font-weight="700">links</text>
+  <text class="mono ink" x="352" y="302" font-size="19">self &#183; parent &#183; collection &#183; derived_from</text>
+  <text class="sans muted" x="352" y="322" font-size="19">How it is reached, and where it came from.</text>
+
+  <!-- ══ D · assets ══ -->
+  <rect class="box" x="330" y="342" width="686" height="86" rx="3"/>
+  <text class="mono red" x="352" y="374" font-size="22" font-weight="700">assets</text>
+  <text class="sans ink" x="352" y="400" font-size="19">The files themselves. Each may carry its own <tspan class="mono">bands</tspan>.</text>
+</svg>
