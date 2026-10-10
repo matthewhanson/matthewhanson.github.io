@@ -56,7 +56,7 @@
     ]
   },
   {
-    "title": "Open Geo Embeddings",
+    "title": "Geo Embeddings 101",
     "when": "2–4 Nov 2026",
     "sort": "2026-11-02",
     "venue": "FOSS4G North America",
@@ -68,7 +68,8 @@
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-na-2026/talk/KJT9VS/"
       }
-    ]
+    ],
+    "subtitle": "Models, image chips, and semantic search"
   },
   {
     "title": "Visualizing Aggregations in STAC",
