@@ -104,7 +104,7 @@
     "note": "Listed in the program as State of STAC"
   },
   {
-    "title": "Open Geo Embeddings",
+    "title": "Geo Embeddings 101",
     "when": "2 Sep",
     "sort": "2026-09-02",
     "venue": "FOSS4G 2026",
@@ -125,7 +125,8 @@
         "url": "/presentations/2026/geo-embeddings/geo-embeddings.pdf"
       }
     ],
-    "subtitle": "Models, representations, and systems"
+    "subtitle": "Models, image chips, and semantic search",
+    "note": "Listed in the program as Open Geo Embeddings"
   },
   {
     "title": "Beyond Metadata Search",
