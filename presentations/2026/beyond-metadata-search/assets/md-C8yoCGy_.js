@@ -1,0 +1,8 @@
+import{L as e,T as t,Y as n,_ as r,b as i,g as a,gt as o,mt as s,x as c}from"./modules/shiki-_IfpXcFA.js";import{nt as l,rt as u}from"./index-COT-9bFm.js";import{t as d}from"./default-bedZKb9b.js";import{t as f}from"./slidev/CodeBlockWrapper-CITEpbED.js";var p={__name:`slides.md__slidev_23`,setup(p){let{$slidev:m,$nav:h,$clicksContext:g,$clicks:_,$page:v,$renderContext:y,$frontmatter:b}=u();return g.setup(),(u,p)=>{let m=f;return e(),r(d,o(t(s(l)(s(b),22))),{default:n(()=>[p[1]||=a(`h1`,null,`One Item can carry more than one embedding`,-1),c(m,{title:``,ranges:[]},{default:n(()=>[...p[0]||=[a(`pre`,{class:`shiki shiki-themes vitesse-dark vitesse-light slidev-code`,style:{"--shiki-dark":`#dbd7caee`,"--shiki-light":`#393a34`,"--shiki-dark-bg":`#121212`,"--shiki-light-bg":`#ffffff`}},[a(`code`,{class:`language-text`},[a(`span`,{class:`line`},[a(`span`,null,`STAC Item · one Sentinel-2 scene`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`├── visual                  image/tiff`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`├── embeddings-clay        application/vnd.apache.parquet`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`│   ├── emb:dimensions     1024`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`│   └── emb:model          clay-v1.5`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`└── embeddings-terramind   application/vnd.apache.parquet`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`    ├── emb:dimensions     768`)]),i(`
+`),a(`span`,{class:`line`},[a(`span`,null,`    └── emb:model          terramind-v1`)])])],-1)]]),_:1}),p[2]||=a(`p`,null,`Collection-level metadata cannot describe both assets correctly. Asset-level metadata can.`,-1)]),_:1},16)}}};export{p as default};
