@@ -7,7 +7,13 @@
     "location": "Snowbird, UT",
     "kind": "talk",
     "status": "delivered",
-    "subtitle": "A choose-your-own-adventure tour of STAC"
+    "subtitle": "A choose-your-own-adventure tour of STAC",
+    "links": [
+      {
+        "label": "agenda",
+        "url": "https://2026.cloudnativegeo.org/#/agenda?day=3&sessionId=200860000000842019"
+      }
+    ]
   },
   {
     "title": "STAC for Embeddings",
@@ -18,6 +24,10 @@
     "kind": "talk",
     "status": "delivered",
     "links": [
+      {
+        "label": "agenda",
+        "url": "https://2026.cloudnativegeo.org/#/agenda?day=3&sessionId=200860000000961092"
+      },
       {
         "label": "slides",
         "url": "/presentations/2026/stac-for-embeddings/"

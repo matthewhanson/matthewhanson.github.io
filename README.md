@@ -14,7 +14,8 @@ data/posts.json       ← the outbound writing
 data/demos.json       ← demo apps (empty for now)
 scripts/build.mjs     renders the data into both pages
 scripts/check-links.mjs   reports which outbound links have rotted
-presentations/        the 2018–2020 reveal-md decks, served at their original urls
+presentations/        published decks: 2018–2020 reveal-md at their original urls,
+                      and <year>/<slug>/ web builds + PDFs from publish-deck
 images/
   avatar.png          the portrait, recoloured to the site palette
   favicon.png
@@ -138,3 +139,4 @@ click-through. During any certificate change the site is unreachable rather than
 The 2018–2020 decks in `presentations/` are served at the same paths they had as a project page of
 `matthewhanson/presentations`, so those urls survived that repo going private. **Pages must stay
 disabled on that repo** — a project page there would shadow this folder.
+`presentations/index.html` is only a redirect to `/talks/`, which is the index for every deck.
