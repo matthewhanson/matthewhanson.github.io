@@ -1,5 +1,15 @@
 [
   {
+    "title": "Where did this embedding come from?",
+    "when": "27 Oct",
+    "sort": "2026-10-27",
+    "venue": "Geo-Embeddings Sprint II",
+    "location": "Zürich",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Lightning talk"
+  },
+  {
     "title": "Into the STACLands",
     "when": "8 Oct",
     "sort": "2026-10-08",
@@ -42,8 +52,8 @@
   },
   {
     "title": "Into the STACLands",
-    "when": "2–4 Nov 2026",
-    "sort": "2026-11-02",
+    "when": "3 Nov 2026",
+    "sort": "2026-11-03",
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
@@ -57,8 +67,8 @@
   },
   {
     "title": "Geo Embeddings 101",
-    "when": "2–4 Nov 2026",
-    "sort": "2026-11-02",
+    "when": "4 Nov 2026",
+    "sort": "2026-11-04",
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
@@ -73,8 +83,8 @@
   },
   {
     "title": "Visualizing Aggregations in STAC",
-    "when": "2–4 Nov 2026",
-    "sort": "2026-11-02",
+    "when": "3 Nov 2026",
+    "sort": "2026-11-03",
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
@@ -930,13 +940,20 @@
     ]
   },
   {
-    "title": "Keynote",
-    "when": "9–12 Nov 2026",
-    "sort": "2026-11-09",
+    "title": "Embeddings Are Summaries",
+    "when": "11 Nov 2026",
+    "sort": "2026-11-11",
     "venue": "Advancing Earth Observation Forum",
     "location": "Hobart, Tasmania",
     "kind": "talk",
     "status": "upcoming",
-    "note": "Title to be confirmed"
+    "subtitle": "Search, Discovery and ARD",
+    "note": "Keynote",
+    "links": [
+      {
+        "label": "agenda",
+        "url": "https://www.earthobsforum.org/program"
+      }
+    ]
   }
 ]
