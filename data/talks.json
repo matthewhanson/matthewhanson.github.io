@@ -570,20 +570,24 @@
     "note": "Advancing Earth Analytics on the Cloud using STAC session"
   },
   {
-    "title": "SatSummit 2022",
-    "when": "28–29 Sep",
-    "sort": "2022-09-28",
-    "venue": "Washington, DC",
-    "location": null,
+    "title": "Satellite Tasking API",
+    "when": "29 Sep",
+    "sort": "2022-09-29",
+    "venue": "SatSummit 2022",
+    "location": "Washington, DC",
     "kind": "talk",
     "status": "delivered",
     "links": [
       {
         "label": "speaker page",
         "url": "https://2022.satsummit.io/speakers/matthew-hanson/"
+      },
+      {
+        "label": "agenda",
+        "url": "https://2022.satsummit.io/agenda/"
       }
     ],
-    "note": "Session not listed publicly"
+    "note": "Lightning talk"
   },
   {
     "title": "The State of Cloud-Native Geospatial",
@@ -912,6 +916,10 @@
       {
         "label": "speaker page",
         "url": "https://2018.satsummit.io/speakers/matt-hanson/"
+      },
+      {
+        "label": "agenda",
+        "url": "https://2018.satsummit.io/agenda/"
       }
     ],
     "note": "Workshop, Analysis at Scale track"
