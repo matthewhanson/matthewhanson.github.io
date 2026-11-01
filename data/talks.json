@@ -554,6 +554,22 @@
     ]
   },
   {
+    "title": "An Introduction to the STAC Spec",
+    "when": "25 Oct",
+    "sort": "2022-10-25",
+    "venue": "Pecora 22",
+    "location": "Denver, CO",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "agenda (archived)",
+        "url": "http://web.archive.org/web/20221025030258/https://pecora22.org/wp-content/uploads/2022/10/Pecora22-Final-Program.pdf"
+      }
+    ],
+    "note": "Advancing Earth Analytics on the Cloud using STAC session"
+  },
+  {
     "title": "SatSummit 2022",
     "when": "28–29 Sep",
     "sort": "2022-09-28",
@@ -701,19 +717,47 @@
     "note": "Multi-speaker session"
   },
   {
+    "title": "Open Standards and Open Software for Geospatial Imagery",
+    "when": "Apr",
+    "sort": "2020-04-00",
+    "venue": "Philly ETE 2020",
+    "location": "virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://chariotsolutions.com/screencast/philly-ete-2020-matthew-hanson-open-standards-and-open-software-for-geospatial-imagery/"
+      },
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=2Y8QUEOb1H8"
+      }
+    ]
+  },
+  {
     "title": "A Geospatial Cloud",
-    "when": "Feb",
-    "sort": "2020-02-00",
+    "when": "4–6 Feb",
+    "sort": "2020-02-04",
     "venue": "Landsat Science Team Winter Meeting 2020",
-    "location": null,
+    "location": "Phoenix, AZ",
     "kind": "talk",
     "status": "delivered",
     "links": [
       {
         "label": "slides",
         "url": "https://docs.google.com/presentation/d/1ZcMlg6iZFgsm2MxIjuhjR9o6iw6La4cMggqz24X6M1M/edit"
+      },
+      {
+        "label": "slides (USGS PDF)",
+        "url": "https://landsat.usgs.gov/landsat/landsat_science_team/2020-02-Kline_USGS_Commerical-Cloud-STAC.pdf"
+      },
+      {
+        "label": "agenda",
+        "url": "https://www.usgs.gov/landsat-missions/landsat-science-team-meeting-february-4-6-2020"
       }
-    ]
+    ],
+    "subtitle": "SpatioTemporal Asset Catalogs + Cloud-Optimized GeoTIFFs"
   },
   {
     "title": "STAC and the Open-Source Ecosystem",
@@ -857,16 +901,6 @@
     ]
   },
   {
-    "title": "How Cloudy is London Really?",
-    "when": "Mar",
-    "sort": "2019-03-00",
-    "venue": "venue unidentified",
-    "location": null,
-    "kind": "talk",
-    "status": "delivered",
-    "subtitle": "A MODIS cloud-frequency data story"
-  },
-  {
     "title": "sat-utils",
     "when": "20 Sep",
     "sort": "2018-09-20",
@@ -881,16 +915,6 @@
       }
     ],
     "note": "Workshop, Analysis at Scale track"
-  },
-  {
-    "title": "Finding and Using Public Earth Imagery with sat-utils",
-    "when": "Aug",
-    "sort": "2018-08-00",
-    "venue": "FOSS4G 2018",
-    "location": "Dar es Salaam",
-    "kind": "talk",
-    "status": "delivered",
-    "note": "A talk cut and a workshop cut"
   },
   {
     "title": "Matthew Hanson on STACspec Success and Guerrilla Standards",
@@ -955,5 +979,123 @@
         "url": "https://www.earthobsforum.org/program"
       }
     ]
+  },
+  {
+    "title": "Creating Land Use and Land Change Maps with Public Datasets",
+    "when": "31 Aug",
+    "sort": "2018-08-31",
+    "venue": "FOSS4G 2018",
+    "location": "Dar es Salaam",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://drive.google.com/file/d/1KTnine-oQjSXVJwcCZzagsXy_AxgkahR/view"
+      }
+    ]
+  },
+  {
+    "title": "Open-Source Coastline Mapping with Publicly Available Imagery",
+    "when": "31 Aug",
+    "sort": "2018-08-31",
+    "venue": "FOSS4G 2018",
+    "location": "Dar es Salaam",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://drive.google.com/file/d/1KTnine-oQjSXVJwcCZzagsXy_AxgkahR/view"
+      }
+    ],
+    "note": "With Mark Dion"
+  },
+  {
+    "title": "STAC, sat-utils and Publicly Available Satellite Imagery Datasets",
+    "when": "29 Aug",
+    "sort": "2018-08-29",
+    "venue": "FOSS4G 2018",
+    "location": "Dar es Salaam",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://drive.google.com/file/d/1KTnine-oQjSXVJwcCZzagsXy_AxgkahR/view"
+      }
+    ]
+  },
+  {
+    "title": "Finding and Using Public Earth Imagery with sat-utils",
+    "when": "27 Aug",
+    "sort": "2018-08-27",
+    "venue": "FOSS4G 2018",
+    "location": "Dar es Salaam",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "agenda (archived)",
+        "url": "https://web.archive.org/web/20190716122704/https://2018.foss4g.org/workshop-schedule/"
+      }
+    ],
+    "note": "Workshop, with Drew Bollinger"
+  },
+  {
+    "title": "Geospatial Lambda for Scalable, Serverless Geo-processing",
+    "when": "17 Aug",
+    "sort": "2017-08-17",
+    "venue": "FOSS4G 2017",
+    "location": "Boston, MA",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://2017.foss4g.org/accepted-presentations/"
+      }
+    ]
+  },
+  {
+    "title": "OSM Stats",
+    "when": "26 Aug",
+    "sort": "2016-08-26",
+    "venue": "FOSS4G 2016",
+    "location": "Bonn",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://foss4g2016.org/talks.html#303"
+      },
+      {
+        "label": "video",
+        "url": "https://av.tib.eu/media/20417"
+      }
+    ],
+    "subtitle": "Rewarding contributors and real-time tracking of OSM"
+  },
+  {
+    "title": "sat-utils",
+    "when": "24 Aug",
+    "sort": "2016-08-24",
+    "venue": "FOSS4G 2016",
+    "location": "Bonn",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://foss4g2016.org/talks.html#270"
+      },
+      {
+        "label": "video",
+        "url": "https://av.tib.eu/media/20399"
+      }
+    ],
+    "subtitle": "Landsat, Sentinel and the use of open raster data",
+    "note": "With Alireza Jazayeri"
   }
 ]
