@@ -1056,6 +1056,22 @@
     "note": "Workshop, with Drew Bollinger"
   },
   {
+    "title": "Urban Change Monitoring and OSM",
+    "when": "15 May",
+    "sort": "2018-05-15",
+    "venue": "FOSS4G North America 2018",
+    "location": "St. Louis, MO",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract (archived)",
+        "url": "http://web.archive.org/web/20180516073026/https://2018.foss4g-na.org/session/urban-change-monitoring-and-osm"
+      }
+    ],
+    "note": "With Zhuangfang Yi"
+  },
+  {
     "title": "Geospatial Lambda for Scalable, Serverless Geo-processing",
     "when": "17 Aug",
     "sort": "2017-08-17",
