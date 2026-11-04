@@ -644,6 +644,65 @@
     "note": "Co-presented"
   },
   {
+    "title": "STAC and how it's Powering Cloud-Native Workflows",
+    "when": "21 Jul",
+    "sort": "2022-07-21",
+    "venue": "ESIP July Meeting 2022",
+    "location": "Pittsburgh, PA",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2022esipjulymeeting.sched.com/event/12etJ/"
+      },
+      {
+        "label": "video",
+        "url": "https://youtu.be/ac_UKunUrNM"
+      }
+    ],
+    "note": "Multi-speaker session"
+  },
+  {
+    "title": "Building a Thriving Open Science Community",
+    "when": "19 Jul",
+    "sort": "2022-07-19",
+    "venue": "ESIP July Meeting 2022",
+    "location": "Pittsburgh, PA",
+    "kind": "panel",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "session",
+        "url": "https://2022esipjulymeeting.sched.com/event/12esO/"
+      },
+      {
+        "label": "video",
+        "url": "https://youtu.be/yMhRoU4u_8Q"
+      }
+    ],
+    "note": "Panelist"
+  },
+  {
+    "title": "The State of Cloud-Native Geospatial",
+    "when": "6 May",
+    "sort": "2022-05-06",
+    "venue": "NORTH51 2022",
+    "location": "Banff, AB",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "program (archived)",
+        "url": "https://web.archive.org/web/20220325170518/http://n51.ca/program/"
+      },
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/1ARwJog0uzz8DcoCVTR37Y3SYqOdJTE_gyoQeKtA0HeY/edit"
+      }
+    ]
+  },
+  {
     "title": "Overview: SpatioTemporal Asset Catalogs (STAC)",
     "when": "May",
     "sort": "2022-05-00",
@@ -703,6 +762,23 @@
       }
     ],
     "note": "Multi-speaker session"
+  },
+  {
+    "title": "Cirrus",
+    "when": "8 Sep",
+    "sort": "2020-09-08",
+    "venue": "Cloud-Native Geospatial Outreach Day",
+    "location": "virtual",
+    "kind": "talk",
+    "status": "delivered",
+    "subtitle": "An open-source geospatial pipeline for STAC",
+    "links": [
+      {
+        "label": "agenda",
+        "url": "https://sites.google.com/radiant.earth/cng-agenda/"
+      }
+    ],
+    "note": "STAC Sprint 6"
   },
   {
     "title": "STAC and Cloud-Optimized Data",
@@ -786,6 +862,22 @@
       }
     ],
     "note": "Opened the Geospatial Interoperability with STAC session"
+  },
+  {
+    "title": "The Open-source Software Ecosystem for Leveraging Public Datasets in STAC",
+    "when": "10 Dec",
+    "sort": "2019-12-10",
+    "venue": "AGU Fall Meeting 2019",
+    "location": "San Francisco",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "abstract",
+        "url": "https://agu.confex.com/agu/fm19/meetingapp.cgi/Paper/625567"
+      }
+    ],
+    "note": "eLightning talk"
   },
   {
     "title": "STAC (lightning talk)",
@@ -877,6 +969,29 @@
       {
         "label": "video",
         "url": "https://media.ccc.de/v/bucharest-430-how-open-source-software-made-cubesatdata-com-possible"
+      }
+    ]
+  },
+  {
+    "title": "STAC deep-dive and implementations",
+    "when": "5–7 Aug",
+    "sort": "2019-08-05",
+    "venue": "ARD19 Workshop",
+    "location": "Menlo Park, CA",
+    "kind": "talk",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=V5pzZegqndQ&t=4520s"
+      },
+      {
+        "label": "slides",
+        "url": "https://docs.google.com/presentation/d/1ZRoUAHvMIbN4ppfltJXAOQUkDiksqigUGp1qtpcXW_M/edit"
+      },
+      {
+        "label": "event (archived)",
+        "url": "https://web.archive.org/web/20210128220808/https://www.ard.zone/ard19"
       }
     ]
   },
@@ -1128,6 +1243,23 @@
     "note": "With Alireza Jazayeri"
   },
   {
+    "title": "Data Processing without Servers",
+    "when": "21 Jun",
+    "sort": "2016-06-21",
+    "venue": "AWS Public Sector Summit 2016",
+    "location": "Washington, DC",
+    "kind": "talk",
+    "status": "delivered",
+    "subtitle": "Lambda and OpenStreetMap for Missing Maps",
+    "links": [
+      {
+        "label": "sessions (archived)",
+        "url": "https://web.archive.org/web/20160705221729/http://aws.amazon.com/summits/washington-dc/sessions/"
+      }
+    ],
+    "note": "With Jed Sundwall (AWS)"
+  },
+  {
     "title": "GIPPY",
     "when": "3 May",
     "sort": "2016-05-03",
@@ -1142,6 +1274,16 @@
         "url": "https://web.archive.org/web/20161206004246/https://2016.foss4g-na.org/program/sessions/accepted"
       }
     ]
+  },
+  {
+    "title": "lidar2dems",
+    "when": "18 Sep",
+    "sort": "2015-09-18",
+    "venue": "FOSS4G 2015",
+    "location": "Seoul",
+    "kind": "talk",
+    "status": "delivered",
+    "note": "Lightning talk"
   },
   {
     "title": "GIPS and GIPPY",
