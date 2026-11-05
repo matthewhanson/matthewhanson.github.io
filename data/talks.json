@@ -241,8 +241,12 @@
     "status": "delivered",
     "links": [
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/1cl_kaSKmNCBOLAkCzLkTtjyNtDS7YUhs9zoBwsjXnO0/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2026/semantic-search-and-change-detection/semantic-search-and-change-detection.pdf"
       }
     ]
   },
@@ -656,6 +660,14 @@
       {
         "label": "video",
         "url": "https://www.youtube.com/watch?v=xtK_gbxZdRk"
+      },
+      {
+        "label": "slides (Google)",
+        "url": "https://docs.google.com/presentation/d/1ZaVd_CX7_DK1bsxNokNcFW78CmZyDDEMGOXFPgeKTvU/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2022/state-of-cloud-native-geospatial/state-of-cloud-native-geospatial.pdf"
       }
     ]
   },
@@ -753,8 +765,12 @@
         "url": "https://web.archive.org/web/20220325170518/http://n51.ca/program/"
       },
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/1ARwJog0uzz8DcoCVTR37Y3SYqOdJTE_gyoQeKtA0HeY/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2022/state-of-cloud-native-geospatial-north51/state-of-cloud-native-geospatial-north51.pdf"
       }
     ]
   },
@@ -889,8 +905,12 @@
     "status": "delivered",
     "links": [
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/1ZcMlg6iZFgsm2MxIjuhjR9o6iw6La4cMggqz24X6M1M/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2020/geospatial-cloud/geospatial-cloud.pdf"
       },
       {
         "label": "slides (USGS PDF)",
@@ -922,8 +942,12 @@
         "url": "/presentations/2020/ESIP-Winter--STAC.html"
       },
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/1nLrKkPi3c3gCONh_2vg_QfCsJreonwc_4LgW7OYeCHM/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2020/esip-winter-stac-os-ecosystem/esip-winter-stac-os-ecosystem.pdf"
       }
     ],
     "note": "Opened the Geospatial Interoperability with STAC session"
@@ -1014,8 +1038,12 @@
     "status": "delivered",
     "links": [
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/13wuBZWbjxD9aite2O-Bf2m9CNTakh_OVAueIlyM1Buw/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2019/stac-and-os-ecosystem/stac-and-os-ecosystem.pdf"
       },
       {
         "label": "video",
@@ -1034,8 +1062,12 @@
     "status": "delivered",
     "links": [
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/18Jn-DAkniYFn9dn7i0W6FYz9imohQaSrjpo5Z_wQss8/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2019/cubesatdata/cubesatdata.pdf"
       },
       {
         "label": "video",
@@ -1058,8 +1090,12 @@
         "url": "https://www.youtube.com/watch?v=V5pzZegqndQ&t=4520s"
       },
       {
-        "label": "slides",
+        "label": "slides (Google)",
         "url": "https://docs.google.com/presentation/d/1ZRoUAHvMIbN4ppfltJXAOQUkDiksqigUGp1qtpcXW_M/edit"
+      },
+      {
+        "label": "PDF",
+        "url": "/presentations/2019/ard19-stac-deep-dive/ard19-stac-deep-dive.pdf"
       },
       {
         "label": "event (archived)",
