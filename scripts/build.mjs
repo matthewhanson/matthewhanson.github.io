@@ -68,7 +68,8 @@ function talkEntry(t, { showYear = false } = {}) {
     : t.when
   const place = [t.venue, t.location].filter(Boolean).map(esc).join(' · ')
   return `\t\t\t<li>
-\t\t\t\t<span class="entry-meta">${[esc(when), place].filter(Boolean).join(' &middot; ')}</span>
+\t\t\t\t<span class="entry-meta">${[esc(when), place].filter(Boolean).join(' &middot; ')}${
+    t.affiliation ? ` &middot; <span class="entry-org">${esc(t.affiliation)}</span>` : ''}</span>
 \t\t\t\t<span class="entry-title">${esc(t.title)}</span>${
     t.subtitle ? `\n\t\t\t\t<span class="entry-sub">${esc(t.subtitle)}</span>` : ''}${
     t.note ? `\n\t\t\t\t<span class="entry-note${

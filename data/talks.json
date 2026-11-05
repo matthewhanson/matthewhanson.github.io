@@ -6,6 +6,7 @@
     "venue": "Geo-Embeddings Sprint II",
     "location": "Zürich",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "delivered",
     "note": "Lightning talk",
     "links": [
@@ -22,6 +23,7 @@
     "venue": "Cloud-Native Geospatial Forum",
     "location": "Snowbird, UT",
     "kind": "talk",
+    "affiliation": "STAC PSC",
     "status": "delivered",
     "subtitle": "A choose-your-own-adventure tour of STAC",
     "links": [
@@ -38,6 +40,7 @@
     "venue": "Cloud-Native Geospatial Forum",
     "location": "Snowbird, UT",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "delivered",
     "links": [
       {
@@ -63,6 +66,7 @@
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
+    "affiliation": "STAC PSC",
     "status": "upcoming",
     "links": [
       {
@@ -78,6 +82,7 @@
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "upcoming",
     "links": [
       {
@@ -98,6 +103,7 @@
     "venue": "FOSS4G North America",
     "location": "Sacramento",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "upcoming",
     "links": [
       {
@@ -105,7 +111,11 @@
         "url": "https://talks.osgeo.org/foss4g-na-2026/talk/YBKEZZ/"
       },
       {
-        "label": "slides (PDF)",
+        "label": "slides",
+        "url": "/presentations/2026/visualizing-stac-aggregations/"
+      },
+      {
+        "label": "PDF",
         "url": "/presentations/2026/visualizing-stac-aggregations/visualizing-stac-aggregations.pdf"
       }
     ],
@@ -118,6 +128,7 @@
     "venue": "FOSS4G 2026",
     "location": "Hiroshima",
     "kind": "talk",
+    "affiliation": "STAC PSC",
     "status": "delivered",
     "links": [
       {
@@ -135,6 +146,7 @@
     "venue": "FOSS4G 2026",
     "location": "Hiroshima",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "delivered",
     "links": [
       {
@@ -160,6 +172,7 @@
     "venue": "FOSS4G 2026",
     "location": "Hiroshima",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "delivered",
     "links": [
       {
@@ -184,6 +197,7 @@
     "venue": "JAXA Sprint",
     "location": "Tsukuba",
     "kind": "talk",
+    "affiliation": "STAC PSC",
     "status": "delivered",
     "links": [
       {
@@ -203,6 +217,7 @@
     "venue": "JAXA Sprint",
     "location": "Tsukuba",
     "kind": "talk",
+    "affiliation": "STAC PSC",
     "status": "delivered",
     "links": [
       {
@@ -222,6 +237,7 @@
     "venue": "Stratus 2026",
     "location": "Rochester, NY",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "delivered",
     "links": [
       {
@@ -237,6 +253,7 @@
     "venue": "FOSS4G 2025",
     "location": "Auckland",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -258,6 +275,7 @@
     "venue": "FOSS4G 2025",
     "location": "Auckland",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -277,6 +295,7 @@
     "venue": "FOSS4G 2025",
     "location": "Auckland",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -296,6 +315,7 @@
     "venue": "FOSS4G 2025",
     "location": "Auckland",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -315,6 +335,7 @@
     "venue": "FOSS4G North America 2025",
     "location": "Reston, VA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -331,6 +352,7 @@
     "venue": "FOSS4G North America 2025",
     "location": "Reston, VA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -346,6 +368,7 @@
     "venue": "Cloud-Native Geospatial Conference 2025",
     "location": "Snowbird, UT",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -365,6 +388,7 @@
     "venue": "FOSS4G 2024",
     "location": "Belém, Brazil",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -380,6 +404,7 @@
     "venue": "FOSS4G 2024",
     "location": "Belém, Brazil",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -399,6 +424,7 @@
     "venue": "FOSS4G 2024",
     "location": "Belém, Brazil",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -419,6 +445,7 @@
     "venue": "FOSS4G North America 2024",
     "location": "St. Louis, MO",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -442,6 +469,7 @@
     "venue": "FOSS4G North America 2024",
     "location": "St. Louis, MO",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -457,6 +485,7 @@
     "venue": "ESIP July Meeting 2024",
     "location": "Asheville, NC",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -473,6 +502,7 @@
     "venue": "ESIP July Meeting 2024",
     "location": "Asheville, NC",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -489,6 +519,7 @@
     "venue": "FOSS4G 2023",
     "location": "Prizren, Kosovo",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -505,6 +536,7 @@
     "venue": "FOSS4G 2023",
     "location": "Prizren, Kosovo",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -528,6 +560,7 @@
     "venue": "FOSS4G 2023",
     "location": "Prizren, Kosovo",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -551,6 +584,7 @@
     "venue": "FOSS4G 2023",
     "location": "Prizren, Kosovo",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -574,6 +608,7 @@
     "venue": "Pecora 22",
     "location": "Denver, CO",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -590,6 +625,7 @@
     "venue": "SatSummit 2022",
     "location": "Washington, DC",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -610,6 +646,7 @@
     "venue": "FOSS4G 2022",
     "location": "Florence, Italy",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -629,6 +666,7 @@
     "venue": "FOSS4G 2022",
     "location": "Florence, Italy",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -644,6 +682,7 @@
     "venue": "FOSS4G 2022",
     "location": "Florence, Italy",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -664,6 +703,7 @@
     "venue": "ESIP July Meeting 2022",
     "location": "Pittsburgh, PA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -684,6 +724,7 @@
     "venue": "ESIP July Meeting 2022",
     "location": "Pittsburgh, PA",
     "kind": "panel",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -704,6 +745,7 @@
     "venue": "NORTH51 2022",
     "location": "Banff, AB",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -723,6 +765,7 @@
     "venue": "OGC / Cloud-Native Geospatial Outreach",
     "location": "virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -738,6 +781,7 @@
     "venue": "FOSS4G 2021",
     "location": "Buenos Aires, virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -753,6 +797,7 @@
     "venue": "FOSS4G 2021",
     "location": "Buenos Aires, virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -768,6 +813,7 @@
     "venue": "ESIP Winter Meeting 2021",
     "location": "virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -784,6 +830,7 @@
     "venue": "Cloud-Native Geospatial Outreach Day",
     "location": "virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "subtitle": "An open-source geospatial pipeline for STAC",
     "links": [
@@ -801,6 +848,7 @@
     "venue": "ESIP Summer Meeting 2020",
     "location": "virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -817,6 +865,7 @@
     "venue": "Philly ETE 2020",
     "location": "virtual",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -836,6 +885,7 @@
     "venue": "Landsat Science Team Winter Meeting 2020",
     "location": "Phoenix, AZ",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -860,6 +910,7 @@
     "venue": "ESIP Winter Meeting 2020",
     "location": "Bethesda, MD",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -884,6 +935,7 @@
     "venue": "AGU Fall Meeting 2019",
     "location": "San Francisco",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -900,6 +952,7 @@
     "venue": "STAC Happy Hour",
     "location": "Element 84 HQ",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -915,6 +968,7 @@
     "venue": "UNH Brown Bag Seminar",
     "location": "Durham, NH",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -931,6 +985,7 @@
     "venue": "FOSS4G 2019",
     "location": "Bucharest",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -955,6 +1010,7 @@
     "venue": "FOSS4G 2019",
     "location": "Bucharest",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -974,6 +1030,7 @@
     "venue": "FOSS4G 2019",
     "location": "Bucharest",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -993,6 +1050,7 @@
     "venue": "ARD19 Workshop",
     "location": "Menlo Park, CA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -1016,6 +1074,7 @@
     "venue": "STAC Sprint #4",
     "location": "Arlington, VA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered"
   },
   {
@@ -1025,6 +1084,7 @@
     "venue": "FOSS4G North America 2019",
     "location": "San Diego, CA",
     "kind": "talk",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -1045,6 +1105,7 @@
     "venue": "SatSummit 2018",
     "location": "Washington, DC",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1064,6 +1125,7 @@
     "sort": "2025-12-00",
     "venue": "Great Data Products",
     "kind": "podcast",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -1080,6 +1142,7 @@
     "venue": "NORTH51",
     "location": "Alberta",
     "kind": "panel",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -1097,6 +1160,7 @@
     "subtitle": "Why machine-writing code is the best, and most dangerous, thing for geospatial",
     "venue": "MapScaping",
     "kind": "podcast",
+    "affiliation": "Element 84",
     "status": "delivered",
     "links": [
       {
@@ -1112,6 +1176,7 @@
     "venue": "Advancing Earth Observation Forum",
     "location": "Hobart, Tasmania",
     "kind": "talk",
+    "affiliation": "LGND",
     "status": "upcoming",
     "subtitle": "Search, Discovery and ARD",
     "note": "Keynote",
@@ -1129,6 +1194,7 @@
     "venue": "FOSS4G 2018",
     "location": "Dar es Salaam",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1144,6 +1210,7 @@
     "venue": "FOSS4G 2018",
     "location": "Dar es Salaam",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1160,6 +1227,7 @@
     "venue": "FOSS4G 2018",
     "location": "Dar es Salaam",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1175,6 +1243,7 @@
     "venue": "FOSS4G 2018",
     "location": "Dar es Salaam",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1191,6 +1260,7 @@
     "venue": "FOSS4G North America 2018",
     "location": "St. Louis, MO",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1207,6 +1277,7 @@
     "venue": "FOSS4G 2017",
     "location": "Boston, MA",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1222,6 +1293,7 @@
     "venue": "FOSS4G 2016",
     "location": "Bonn",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1246,6 +1318,7 @@
     "venue": "FOSS4G 2016",
     "location": "Bonn",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "links": [
       {
@@ -1271,6 +1344,7 @@
     "venue": "AWS Public Sector Summit 2016",
     "location": "Washington, DC",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "subtitle": "Lambda and OpenStreetMap for Missing Maps",
     "links": [
@@ -1288,6 +1362,7 @@
     "venue": "FOSS4G North America 2016",
     "location": "Raleigh, NC",
     "kind": "talk",
+    "affiliation": "Development Seed",
     "status": "delivered",
     "subtitle": "A high performance geospatial image processing library for Python",
     "links": [
@@ -1304,6 +1379,7 @@
     "venue": "FOSS4G 2015",
     "location": "Seoul",
     "kind": "talk",
+    "affiliation": "Applied GeoSolutions",
     "status": "delivered",
     "note": "Lightning talk"
   },
@@ -1314,6 +1390,7 @@
     "venue": "FOSS4G North America 2015",
     "location": "San Francisco",
     "kind": "talk",
+    "affiliation": "Applied GeoSolutions",
     "status": "delivered",
     "subtitle": "Scaling up image processing of remote sensing data",
     "links": [

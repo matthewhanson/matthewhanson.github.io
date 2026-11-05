@@ -30,6 +30,11 @@ this site is the index and hosts almost nothing.
 talks, podcasts and panels, `/writing/` carries posts. The talks page used to hold all four under a
 title that named two.
 
+`affiliation` in `data/talks.json` names who a talk was given for: the employer at the time
+(Applied GeoSolutions, Development Seed, Element 84, LGND), or `STAC PSC` for talks given in a
+community capacity. STAC talks given on Element 84 decks count as Element 84. It renders at the end
+of the row's meta line.
+
 `kind` in `data/talks.json` splits speaking into `talk`, `podcast`, and `panel`; the renderer gives
 each its own section rather than lumping them together. Markers encode where a thing lives: an
 oxblood diamond for a talk, a hollow brass ring for writing hosted elsewhere, a filled brass circle

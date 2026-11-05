@@ -206,6 +206,11 @@ section { margin-top: 2.9rem; }
     color: var(--muted);
 }
 
+/* who the talk was given for: employer, or STAC PSC for community-capacity talks */
+.entry-org {
+    color: var(--ink-2);
+}
+
 .entry-title {
     display: block;
     font-family: var(--serif);
