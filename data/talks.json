@@ -7,7 +7,13 @@
     "location": "Zürich",
     "kind": "talk",
     "status": "delivered",
-    "note": "Lightning talk"
+    "note": "Lightning talk",
+    "links": [
+      {
+        "label": "slides (PDF)",
+        "url": "/presentations/2026/embedding-provenance/embedding-provenance.pdf"
+      }
+    ]
   },
   {
     "title": "Into the STACLands",
@@ -21,7 +27,7 @@
     "links": [
       {
         "label": "agenda",
-        "url": "https://2026.cloudnativegeo.org/#/agenda?day=3&sessionId=200860000000842019"
+        "url": "https://2026.cloudnativegeo.org/#/?lang=en&sessionId=200860000000842019"
       }
     ]
   },
@@ -36,7 +42,7 @@
     "links": [
       {
         "label": "agenda",
-        "url": "https://2026.cloudnativegeo.org/#/agenda?day=3&sessionId=200860000000961092"
+        "url": "https://2026.cloudnativegeo.org/#/?lang=en&sessionId=200860000000961092"
       },
       {
         "label": "slides",
@@ -77,6 +83,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-na-2026/talk/KJT9VS/"
+      },
+      {
+        "label": "slides (PDF)",
+        "url": "/presentations/2026/geo-embeddings-na/geo-embeddings-na.pdf"
       }
     ],
     "subtitle": "Models, image chips, and semantic search"
@@ -93,6 +103,10 @@
       {
         "label": "abstract",
         "url": "https://talks.osgeo.org/foss4g-na-2026/talk/YBKEZZ/"
+      },
+      {
+        "label": "slides (PDF)",
+        "url": "/presentations/2026/visualizing-stac-aggregations/visualizing-stac-aggregations.pdf"
       }
     ],
     "subtitle": "From scenes to coverage"
@@ -1217,6 +1231,10 @@
       {
         "label": "video",
         "url": "https://av.tib.eu/media/20417"
+      },
+      {
+        "label": "slides (Prezi)",
+        "url": "https://prezi.com/gyowykaiq5ed/missingmaps/"
       }
     ],
     "subtitle": "Rewarding contributors and real-time tracking of OSM"
@@ -1237,6 +1255,10 @@
       {
         "label": "video",
         "url": "https://av.tib.eu/media/20399"
+      },
+      {
+        "label": "slides (Prezi)",
+        "url": "https://prezi.com/eleuf6meup3_/sat-utils/"
       }
     ],
     "subtitle": "Landsat, Sentinel and the use of open raster data",
