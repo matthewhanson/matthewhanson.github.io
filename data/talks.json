@@ -406,6 +406,23 @@
     ]
   },
   {
+    "title": "Introduction to STAPI",
+    "when": "Spring",
+    "sort": "2025-03-00",
+    "venue": "Element 84 webinar",
+    "location": "virtual",
+    "kind": "talk",
+    "affiliation": "Element 84",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=a6jg5eQGndk"
+      }
+    ],
+    "note": "Webinar"
+  },
+  {
     "title": "The State of STAC",
     "when": "2–8 Dec",
     "sort": "2024-12-02",
@@ -874,6 +891,22 @@
       {
         "label": "video",
         "url": "https://www.youtube.com/watch?v=fMhH7fM6YK8"
+      }
+    ]
+  },
+  {
+    "title": "Getting Started with STAC for Public Datasets",
+    "when": "27 Sep",
+    "sort": "2021-09-27",
+    "venue": "ESIP Cloud Computing Cluster",
+    "location": "virtual",
+    "kind": "talk",
+    "affiliation": "Element 84",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=GlGua4fELL0"
       }
     ]
   },
