@@ -968,6 +968,23 @@
     "note": "STAC Sprint 6"
   },
   {
+    "title": "STAC Sprint #6 Overview",
+    "when": "Aug",
+    "sort": "2020-08-24",
+    "venue": "STAC Sprint #6",
+    "location": "virtual",
+    "kind": "talk",
+    "affiliation": "Element 84",
+    "status": "delivered",
+    "links": [
+      {
+        "label": "video",
+        "url": "https://www.youtube.com/watch?v=hVy1dKAotfU"
+      }
+    ],
+    "note": "Recorded summary of the sprint"
+  },
+  {
     "title": "STAC and Cloud-Optimized Data",
     "when": "14 Jul",
     "sort": "2020-07-14",
